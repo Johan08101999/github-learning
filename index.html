@@ -1,30 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>your only as good enough as you believe</p>
-    <a href="https://pythontutor.com/render.html#mode=edit" target="_blank">your work station</a>
-    <form>
-        <label for="text">First Name</label>
-        <input type="text" name="" id="text">
-        <label for="text">Middel Name</label>
-        <input type="text" name="" id="text">
-        <label for="text">Last Name</label>
-        <input type="text" name="" id="text"><br>
-        <label for="email">E-mail</label><br>
-        <input type="email" class="form-control" name="" id="" ><br>
-        <label for="password">Password</label><br>
-        <input type="password" name="" id=""><br>
-        <label for="file">Choose file tp upload</label><br>
-        <input type="file" name="" id="upload">
-        <div style="background-color: blue;">this is div</div>
-        <article>this is article</article>
-        <section>this is section</section>
 
-    </form>
-</body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Travel Landing</title>
+</head>
+
+<body>
+  <div style="width: 100%; height: 100%; position: relative; background: white">
+    <img style="width: 1440px; height: 927px; left: 0px; top: 0px; position: absolute; opacity: 0.90" src="unsplash_ELf8M_YWRTY (1).png" alt="vacation">
+    <div style="padding: 8px; left: 907px; top: 45px; position: absolute; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+    <div style="color: #212832; font-size: 22.61px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 700; word-wrap: break-word">Bookings</div>
+    </div>
+    <div style="padding: 8px; left: 746px; top: 45px; position: absolute; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+    <div style="text-align: center; color: #212832; font-size: 22.61px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 700; word-wrap: break-word">Flights</div>
+    </div>
+    <div style="padding: 8px; left: 587px; top: 45px; position: absolute; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+    <div style="text-align: center; color: #212832; font-size: 22.61px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 700; word-wrap: break-word">Hotels</div>
+    </div>
+    <div style="padding: 8px; left: 374px; top: 45px; position: absolute; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+    <div style="text-align: center; color: #212832; font-size: 22.61px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 700; word-wrap: break-word">Desitnations</div>
+    </div>
+    <div style="width: 107px; height: 40px; padding-left: 20px; padding-right: 20px; padding-top: 8px; padding-bottom: 8px; left: 1107px; top: 50px; position: absolute; background: #EC682C; border-radius: 8px; border: 1px #EC682C solid; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+      <div style="color: white; font-size: 22.61px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 400; word-wrap: break-word">Login</div>
+    </div>
+    <div style="height: 40px; padding-left: 20px; padding-right: 20px; padding-top: 8px; padding-bottom: 8px; left: 1261px; top: 50px; position: absolute; background: #EC682C; border-radius: 8px; border: 1px #EC682C solid; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+    <div style="color: white; font-size: 22.61px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 400; word-wrap: break-word">Sign up</div>
+    </div>
+    <div style="width: 314px; height: 45px; left: 55px; top: 48px; position: absolute; color: black; font-size: 40px; font-family: Peralta; font-weight: 400; word-wrap: break-word">Bon Voyage</div>
+    <div style="width: 1108px; height: 89px; left: 41px; top: 387px; position: absolute; color: #4B40C5; font-size: 48px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 700; line-height: 118.38px; word-wrap: break-word">Travel, enjoy and live a new and full life </div>
+    <div style="width: 757px; height: 47px; left: 50px; top: 476px; position: absolute; color: white; font-size: 32px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 700; text-transform: uppercase; word-wrap: break-word">Best Destinations around the world</div>
+    <img style="width: 417.66px; height: 607.87px; left: 985.67px; top: 2010px; position: absolute; box-shadow: 0px 2.4631879329681396px 4.187419891357422px rgba(0, 0, 0, 0); border-top-left-radius: 31.92px;border-top-right-radius: 31.92px;" src="Rectangle 14.png" />
+    <div style="width: 418.99px; height: 172.92px; left: 984.34px; top: 2444.95px; position: absolute">
+    <div style="width: 313.99px; height: 172.92px; left: 80px; top: -30px; position: absolute; background: white; border-bottom-left-radius: 31.92px; border-bottom-right-radius: 31.92px"></div>
+    <div style="left: 90.60px; top: 17.24px; position: absolute; color: #5E6282; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500; line-height: 5.88px; word-wrap: break-word">Full Europe</div>
+    <div style="width: 26.60px; height: 26.60px; left: 26.60px; top: 90.45px; position: absolute">
+    <div style="width: 21.61px; height: 21.62px; left: 80.49px; top: -2.49px; position: absolute">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" viewBox="0 0 28 27" fill="none">
+        <path d="M24.6353 4.0727L15.4908 24.0245C15.4142 24.1917 15.2845 24.3287 15.1218 24.4143C14.9591 24.4998 14.7726 24.529 14.5916 24.4973C14.4105 24.4657 14.2451 24.3749 14.1211 24.2391C13.9971 24.1034 13.9216 23.9305 13.9064 23.7473L13.1333 14.4724L3.85842 13.6993C3.67524 13.6841 3.50227 13.6086 3.36656 13.4846C3.23084 13.3606 3.14005 13.1952 3.10836 13.0141C3.07668 12.8331 3.10589 12.6466 3.19144 12.4839C3.27699 12.3212 3.41405 12.1915 3.58117 12.1149L23.533 2.97036C23.6872 2.89967 23.8594 2.87787 24.0264 2.90789C24.1934 2.9379 24.3472 3.01829 24.4672 3.13827C24.5872 3.25824 24.6675 3.41205 24.6976 3.57904C24.7276 3.74603 24.7058 3.91821 24.6351 4.07245L24.6353 4.0727Z" fill="#080809"/>
+      </svg>
+    </div>
+    </div>
+    <div style="left: 140.84px; top: 87.45px; position: absolute; color: #5E6282; font-size: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500; line-height: 24.90px; word-wrap: break-word">28 Days Trip</div>
+    <div style="left: 296.66px; top: 5.23px; position: absolute; color: #5E6282; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500; line-height: 29.88px; word-wrap: break-word">₹15Lakh</div>
+    </div>
+    <img style="width: 417.66px; height: 607.87px; left: 21.33px; top: 2010px; position: absolute; box-shadow: 0px 2.4631879329681396px 4.187419891357422px rgba(0, 0, 0, 0); border-radius: 31.92px" src="Rectangle 14 (1).png" />
+    <div style="width: 418.99px; height: 172.92px; left: 20px; top: 2444.95px; position: absolute">
+    <div style="width: 319.99px; height: 172.92px; left: 18px; top: -30px; position: absolute; background: white; border-bottom-left-radius: 31.92px; border-bottom-right-radius: 31.92px"></div>
+    <div style="left: 26.60px; top: 15.91px; position: absolute; color: #5E6282; font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500; line-height: 29.88px; word-wrap: break-word">Rome, Italty</div>
+    <div style="width: 26.60px; height: 26.60px; left: 26.60px; top: 90.45px; position: absolute">
+    <div style="width: 21.61px; height: 21.62px; left: 2.49px; top: 2.49px; position: absolute">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" viewBox="0 0 28 27" fill="none">
+        <path d="M24.6353 4.0727L15.4908 24.0245C15.4142 24.1917 15.2845 24.3287 15.1218 24.4143C14.9591 24.4998 14.7726 24.529 14.5916 24.4973C14.4105 24.4657 14.2451 24.3749 14.1211 24.2391C13.9971 24.1034 13.9216 23.9305 13.9064 23.7473L13.1333 14.4724L3.85842 13.6993C3.67524 13.6841 3.50227 13.6086 3.36656 13.4846C3.23084 13.3606 3.14005 13.1952 3.10836 13.0141C3.07668 12.8331 3.10589 12.6466 3.19144 12.4839C3.27699 12.3212 3.41405 12.1915 3.58117 12.1149L23.533 2.97036C23.6872 2.89967 23.8594 2.87787 24.0264 2.90789C24.1934 2.9379 24.3472 3.01829 24.4672 3.13827C24.5872 3.25824 24.6675 3.41205 24.6976 3.57904C24.7276 3.74603 24.7058 3.91821 24.6351 4.07245L24.6353 4.0727Z" fill="#080809"/>
+      </svg>
+    </div>
+    </div>
+    <div style="left: 71.83px; top: 90.45px; position: absolute; color: #5E6282; font-size: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500; line-height: 24.90px; word-wrap: break-word">10 Days Trip</div>
+    <div style="left: 223px; top: 17.23px; position: absolute; color: #5E6282; font-size: 24px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500; line-height: 29.88px; word-wrap: break-word">₹5,42Lakh</div>
+    </div>
+    <img style="width: 417.66px; height: 607.87px; left: 486.87px; top: 2010px; position: absolute; box-shadow: 0px 2.4631879329681396px 4.187419891357422px rgba(0, 0, 0, 0); border-radius: 31.92px" src="Rectangle 14 (2).png" />
+    <div style="width: 418.99px; height: 172.92px; left: 485.54px; top: 2444.95px; position: absolute">
+    <div style="width: 278.99px; height: 172.92px; left: 70px; top: -30px; position: absolute; background: white; border-bottom-left-radius: 31.92px; border-bottom-right-radius: 31.92px"></div>
+    <div style="left: 76.60px; top: 20.91px; position: absolute; color: #5E6282; font-size: 24px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500; line-height: 29.88px; word-wrap: break-word">London, UK</div>
+    <div style="width: 26.60px; height: 26.60px; left: 26.60px; top: 90.45px; position: absolute">
+    <div style="width: 21.61px; height: 21.62px; left: 62.49px; top: 2.49px; position: absolute">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" viewBox="0 0 28 27" fill="none">
+        <path d="M24.6353 4.0727L15.4908 24.0245C15.4142 24.1917 15.2845 24.3287 15.1218 24.4143C14.9591 24.4998 14.7726 24.529 14.5916 24.4973C14.4105 24.4657 14.2451 24.3749 14.1211 24.2391C13.9971 24.1034 13.9216 23.9305 13.9064 23.7473L13.1333 14.4724L3.85842 13.6993C3.67524 13.6841 3.50227 13.6086 3.36656 13.4846C3.23084 13.3606 3.14005 13.1952 3.10836 13.0141C3.07668 12.8331 3.10589 12.6466 3.19144 12.4839C3.27699 12.3212 3.41405 12.1915 3.58117 12.1149L23.533 2.97036C23.6872 2.89967 23.8594 2.87787 24.0264 2.90789C24.1934 2.9379 24.3472 3.01829 24.4672 3.13827C24.5872 3.25824 24.6675 3.41205 24.6976 3.57904C24.7276 3.74603 24.7058 3.91821 24.6351 4.07245L24.6353 4.0727Z" fill="#080809"/>
+      </svg>
+    </div>
+    </div>
+    <div style="left: 133.16px; top: 90.45px; position: absolute; color: #5E6282; font-size: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500; line-height: 24.90px; word-wrap: break-word">12 Days Trip</div>
+    <div style="left: 249.46px; top: 17.23px; position: absolute; color: #5E6282; font-size: 24px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500; line-height: 29.88px; word-wrap: break-word">₹4.2Lakh</div>
+    </div>
+    <div style="left: 599px; top: 1789px; position: absolute; text-align: center; color: #4B40C5; font-size: 32px; font-family: Poppins; font-weight: 700; word-wrap: break-word">Top Selling</div>
+    <div style="left: 440px; top: 1877px; position: absolute; text-align: center; color: #14183E; font-size: 62px; font-family: Poppins; font-weight: 700; text-transform: capitalize; word-wrap: break-word">Top Destinations</div>
+    <div style="width: 1279px; height: 672.05px; left: 75px; top: 1004px; position: absolute">
+    <div style="width: 270px; height: 34px; left: 504px; top: 0px; position: absolute; text-align: center; color: #4B40C5; font-size: 32px; font-family: Poppins; font-weight: 700; word-wrap: break-word">CATEGORY</div>
+    <div style="width: 898px; height: 81px; left: 233px; top: 74px; position: absolute; text-align: center; color: #14183E; font-size: 64px; font-family: Poppins; font-weight: 700; text-transform: capitalize; word-wrap: break-word">We Offer Best Services</div>
+    <div style="width: 117.28px; height: 125.33px; left: 282.41px; top: 546.72px; position: absolute; background: #DF6951; border-top-left-radius: 39.90px; border-top-right-radius: 13.30px"></div>
+    <div style="width: 117.28px; height: 125.33px; left: 1061.28px; top: 304px; position: absolute; transform: rotate(-180deg); transform-origin: 0 0; background: #4B40C5; border-top-left-radius: 39.90px; border-top-right-radius: 13.30px"></div>
+    <div style="width: 313.15px; height: 393.54px; left: 323.46px; top: 237.15px; position: absolute; background: white; box-shadow: 0px 2.4631879329681396px 4.187419891357422px rgba(0, 0, 0, 0); border-radius: 47.88px"></div>
+    <div style="width: 313.15px; height: 393.54px; left: 718.05px; top: 228px; position: absolute; background: white; box-shadow: 0px 2.4631879329681396px 4.187419891357422px rgba(0, 0, 0, 0); border-radius: 47.88px"></div>
+    <div style="width: 212px; height: 136px; left: 363px; top: 528px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Poppins; font-weight: 400; line-height: 34.58px; word-wrap: break-word">Getting cheap best flights </div>
+    <div style="width: 177px; height: 34px; left: 389px; top: 478px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Best Flights</div>
+    <div style="width: 58.64px; height: 61.41px; left: 437px; top: 348.70px; position: absolute; background: #FBEBBC; border-top-left-radius: 6.65px; border-top-right-radius: 6.65px; border-bottom-right-radius: 13.30px; border-bottom-left-radius: 23.94px"></div>
+    <div style="width: 254.33px; height: 191.42px; left: 409.75px; top: 178.38px; position: absolute; transform-origin: 0 0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="135" height="434" viewBox="0 0 135 434" fill="none">
+        <path d="M85.2791 235.588C83.6722 236.168 82.0898 237.043 80.6299 238.156C76.83 240.999 74.5089 244.61 75.446 246.221C76.383 247.831 80.2231 246.832 84.0231 243.989C85.5 242.904 86.8314 241.599 87.9352 240.153C88.4488 239.457 88.5787 238.664 88.2667 238.13L87.0494 236.037C86.7399 235.501 86.0451 235.325 85.2791 235.588Z" fill="#D5D6DB"/>
+        <path d="M75.9461 201.762C74.781 202.183 73.6334 202.817 72.5748 203.624C69.8201 205.685 68.1362 208.304 68.8151 209.471C69.494 210.638 72.2795 209.912 75.0339 207.851C76.1048 207.065 77.0702 206.118 77.8707 205.07C78.2427 204.565 78.3366 203.991 78.1105 203.603L77.2291 202.088C77.005 201.7 76.5016 201.571 75.9461 201.762Z" fill="#D5D6DB"/>
+        <path d="M60.9468 205.033C60.6919 205.041 60.4145 205.149 60.1688 205.333L53.6887 210.196C53.1467 210.602 52.9015 211.268 53.1415 211.684C53.1964 211.779 53.2745 211.856 53.3715 211.91L68.202 220.232L89.81 204.017L60.9468 205.033Z" fill="#029BC5"/>
+        <path d="M126.747 198.434L69.3114 238.5L35.7551 255.121L18.8278 260.492L17.1606 257.826L112.835 192.085C115.686 190.119 118.815 188.725 121.905 188.045C123.258 187.754 124.585 187.616 125.856 187.632C126.982 187.639 128.042 187.802 129.002 188.118C130.074 188.478 132.168 188.252 132.787 189.175C132.789 189.173 134.113 193.614 126.747 198.434Z" fill="#E1E6E9"/>
+        <path d="M71.2483 236.659L44.8817 277.061C44.5491 277.623 44.6947 278.181 45.2066 278.306C45.5208 278.383 45.9168 278.28 46.2588 278.032L52.64 273.422C53.8673 272.535 54.9702 271.472 55.8806 270.298L105.917 210.794L71.2483 236.659Z" fill="#029BC5"/>
+        <path d="M8.80921 234.859C8.4037 234.778 7.90764 234.924 7.4776 235.251L2.07804 239.363C1.34233 239.923 1.01073 240.841 1.33716 241.413C1.39936 241.522 1.48293 241.614 1.58526 241.684L15.542 251.331L31.4375 239.408L8.80921 234.859Z" fill="#029BC5"/>
+        <path d="M21.2131 254.67L12.9443 265.986C12.8233 266.149 12.8389 266.33 12.9792 266.39C13.0804 266.434 13.2238 266.404 13.3442 266.313L18.2651 262.779C18.3033 262.751 18.3384 262.719 18.3679 262.683L30.3345 248.124L21.2131 254.67Z" fill="#029BC5"/>
+        <path d="M124.38 188.932C123.049 188.912 121.658 189.066 120.24 189.389C118.759 191.469 117.761 193.711 117.344 195.891C117.298 196.324 117.634 196.583 118.093 196.469C118.236 196.434 118.381 196.365 118.512 196.268L127.678 189.475C126.671 189.123 125.561 188.94 124.38 188.932Z" fill="#029BC5"/>
+        <path d="M104.85 201.182L111.051 196.365L116.102 205.343L109.9 210.159L104.85 201.182Z" fill="#D5D6DB"/>
+        <path d="M101.259 204.385C100.516 204.963 100.178 205.902 100.505 206.481L101.035 207.42C101.387 207.979 102.267 207.948 102.999 207.35C103.696 206.781 104.015 205.897 103.727 205.326L103.197 204.388C102.87 203.809 102.003 203.807 101.259 204.385Z" fill="#3A556A"/>
+        <path d="M96.0234 207.859C95.2798 208.437 94.9418 209.376 95.2691 209.955L95.7994 210.894C96.1515 211.453 97.0307 211.422 97.7633 210.824C98.4605 210.255 98.7789 209.371 98.4916 208.8L97.9613 207.862C97.634 207.283 96.7667 207.282 96.0234 207.859Z" fill="#3A556A"/>
+        <path d="M90.7855 211.337C90.0427 211.916 89.7058 212.853 90.0328 213.432L90.5631 214.371C90.9152 214.93 91.7944 214.899 92.527 214.301C93.2241 213.732 93.5426 212.848 93.2552 212.278L92.725 211.339C92.3977 210.76 91.5295 210.759 90.7855 211.337Z" fill="#3A556A"/>
+        <path d="M85.5496 214.81C84.8067 215.388 84.4699 216.326 84.7969 216.905L85.3272 217.843C85.6793 218.403 86.5585 218.372 87.2911 217.774C87.9882 217.205 88.3067 216.32 88.0193 215.75L87.4891 214.811C87.1615 214.232 86.2933 214.232 85.5496 214.81Z" fill="#3A556A"/>
+        <path d="M80.3146 218.287C79.571 218.866 79.2338 219.805 79.5611 220.384L80.0919 221.324C80.4191 221.904 81.2873 221.904 82.031 221.326C82.7748 220.747 83.1124 219.809 82.7852 219.229L82.2544 218.29C81.9281 217.71 81.0603 217.708 80.3162 218.286C80.3155 218.286 80.3152 218.286 80.3146 218.287Z" fill="#3A556A"/>
+        <path d="M75.0788 221.76C74.3352 222.34 73.998 223.278 74.3253 223.858L74.8561 224.798C75.1834 225.377 76.0515 225.378 76.7953 224.799C77.539 224.221 77.8766 223.282 77.5494 222.703L77.0186 221.763C76.6923 221.183 75.8245 221.181 75.0804 221.759C75.0797 221.759 75.0791 221.76 75.0788 221.76Z" fill="#3A556A"/>
+        <path d="M69.8423 225.237C69.0987 225.816 68.7615 226.755 69.0889 227.334L69.6197 228.274C69.9478 228.853 70.8165 228.852 71.5594 228.273C72.3012 227.695 72.6381 226.758 72.3125 226.179L71.7817 225.24C71.4547 224.66 70.5866 224.658 69.8423 225.237Z" fill="#3A556A"/>
+        <path d="M64.606 228.711C63.8624 229.29 63.5252 230.229 63.8525 230.808L64.3833 231.748C64.7115 232.327 65.5801 232.326 66.3231 231.747C67.0648 231.169 67.4018 230.232 67.0762 229.653L66.5454 228.714C66.2184 228.134 65.3503 228.132 64.606 228.711Z" fill="#3A556A"/>
+        <path d="M59.3701 232.186C58.6265 232.765 58.2893 233.704 58.6166 234.283L59.1474 235.223C59.4756 235.802 60.3442 235.801 61.0872 235.222C61.8289 234.644 62.1659 233.707 61.8403 233.128L61.3095 232.189C60.9822 231.609 60.1141 231.608 59.3701 232.186Z" fill="#3A556A"/>
+        <path d="M54.1324 235.662C53.3887 236.241 53.0511 237.179 53.3783 237.758L53.379 237.76L53.9098 238.7C54.2379 239.278 55.1066 239.277 55.8495 238.698C56.5913 238.12 56.9282 237.184 56.6026 236.605L56.0718 235.665C55.7448 235.085 54.8767 235.084 54.1324 235.662Z" fill="#3A556A"/>
+        <path d="M48.8978 239.135C48.154 239.714 47.8164 240.652 48.1436 241.232L48.1443 241.233L48.6751 242.173C49.0033 242.751 49.8719 242.751 50.6149 242.172C51.3566 241.594 51.6936 240.657 51.368 240.078L50.8372 239.138C50.5099 238.559 49.6417 238.557 48.8978 239.135Z" fill="#3A556A"/>
+      </svg>
+    </div>
+    </div>
+    <div style="width: 107.90px; height: 97.76px; left: 77.16px; top: 289.78px; position: absolute">
+    <div style="width: 78.27px; height: 87.73px; left: 0px; top: 1050px; position: absolute">
+      <svg xmlns="http://www.w3.org/2000/svg" width="109" height="99" viewBox="0 0 109 99" fill="none">
+        <path d="M108.063 74.6019C108.063 87.8248 97.3435 98.5441 84.1206 98.5441L56.071 98.5441C52.398 98.5441 49.4204 95.5665 49.4204 91.8935L49.4204 50.4323C49.4204 43.0862 55.3756 37.1311 62.7216 37.1311L101.412 37.1311C105.085 37.1311 108.063 40.1087 108.063 43.7817L108.063 74.6019Z" fill="#FBEBBC"/>
+        <path d="M27.7546 64.2734L25.5401 63.1406L12.3847 83.9266H27.0663L28.4811 82.9408V64.9849L27.7546 64.2734Z" fill="#407093"/>
+        <path d="M25.7402 63.2425L20.7614 60.6953H19.823L5.74445 82.9401L6.58259 83.9259H12.6498L25.7402 63.2425Z" fill="#365E7D"/>
+        <path d="M31.1241 82.9401H11.7106C10.8286 82.9401 10.1136 83.704 10.1136 84.6466V86.809C10.1136 87.7513 10.8285 88.5152 11.7103 88.5154H31.1241C32.0061 88.5154 32.7211 87.7515 32.7211 86.809V84.6466C32.7211 83.704 32.0061 82.9401 31.1241 82.9401Z" fill="#4A80AA"/>
+        <path d="M10.4441 86.809V84.6466C10.4441 83.7041 11.1591 82.9401 12.041 82.9401H1.75781C0.875889 82.9401 0.160889 83.704 0.160889 84.6466V86.809C0.160889 87.7515 0.875889 88.5154 1.75781 88.5154H12.0409C11.159 88.5154 10.4441 87.7515 10.4441 86.809Z" fill="#407093"/>
+        <path d="M25.072 50.8921C24.4744 52.2094 24.1367 53.6865 24.1367 55.2491C24.1367 59.519 26.6388 63.1615 30.1604 64.6024C31.6724 64.0962 33.0158 63.183 34.077 61.9808V59.799L25.072 50.8921Z" fill="#4A80AA"/>
+        <path d="M24.2942 55.2854C24.2942 53.7589 24.6245 52.3162 25.2093 51.0298L22.3309 48.1826H21.1629C19.3966 49.9631 18.2925 52.4856 18.2925 55.2852C18.2925 60.6783 22.3836 65.0502 27.4305 65.0502C28.4817 65.0502 29.4899 64.8575 30.4295 64.5081C26.8582 63.1804 24.2942 59.5539 24.2942 55.2854Z" fill="#407093"/>
+        <path d="M77.3484 1.94117C75.9024 0.395912 73.5579 0.395912 72.1121 1.94117L68.5784 5.71727V6.19586L72.9889 11.1091L73.8148 11.313L77.3483 7.53686C78.7945 5.99178 78.7945 3.48643 77.3484 1.94117Z" fill="#FFD086"/>
+        <path d="M78.3253 3.80891C78.171 3.12487 77.8481 2.47528 77.3484 1.94117C75.9024 0.395912 73.5579 0.395912 72.1121 1.94117L68.5784 5.71727V6.19586L70.9168 8.80076C72.3109 7.25053 73.695 5.7207 74.4068 4.96006C75.5934 3.69222 77.3265 3.68246 78.3253 3.80891Z" fill="#FFC365"/>
+        <path d="M65.2509 12.0004C65.2103 12.0004 65.1693 11.9982 65.1281 11.9939L24.2937 7.69874C23.6127 7.62712 23.1151 6.97923 23.1821 6.2515C23.2492 5.52376 23.8558 4.9924 24.5365 5.06351L65.3708 9.35847C66.0517 9.43009 66.5494 10.078 66.4824 10.8057C66.4193 11.4896 65.8804 12.0004 65.2509 12.0004Z" fill="#365E7D"/>
+        <path d="M36.1038 20.168C35.5543 20.168 35.0523 19.7742 34.9063 19.1796C34.7327 18.4723 35.1286 17.7485 35.7903 17.5629L64.9357 9.39364C65.5975 9.20841 66.2749 9.63114 66.4484 10.3385C66.6221 11.0457 66.2263 11.7694 65.5644 11.955L36.4191 20.1243C36.3136 20.1537 36.2077 20.168 36.1038 20.168Z" fill="#407093"/>
+        <path d="M73.1666 59.8598C72.5366 59.8598 71.9977 59.3485 71.935 58.6644L67.9407 15.0014C67.8741 14.2738 68.3722 13.6261 69.0532 13.5548C69.7342 13.487 70.3401 14.0161 70.4067 14.7438L74.401 58.4069C74.4675 59.1345 73.9695 59.7822 73.2885 59.8535C73.2476 59.8576 73.2069 59.8598 73.1666 59.8598Z" fill="#365E7D"/>
+        <path d="M61.4132 47.4655C61.3082 47.4655 61.2014 47.4509 61.0949 47.4209C60.4335 47.2335 60.0395 46.5086 60.2149 45.8018L67.9722 14.5363C68.1474 13.8293 68.8256 13.409 69.4872 13.5957C70.1486 13.7832 70.5426 14.508 70.3672 15.2148L62.6099 46.4804C62.4629 47.0736 61.9615 47.4655 61.4132 47.4655Z" fill="#407093"/>
+        <path d="M65.0275 9.51013L68.5701 5.72442L73.8057 11.3193L70.2631 15.1051L65.0275 9.51013Z" fill="#FFC365"/>
+        <path d="M67.718 12.3697C68.5695 11.417 69.8991 9.93105 71.1851 8.50231L68.5786 5.7168L65.0353 9.50301L67.718 12.3697Z" fill="#FFA90F"/>
+        <path d="M71.0606 17.2664C70.7436 17.2664 70.4264 17.1371 70.1846 16.8787L63.3708 9.59754C62.8869 9.0804 62.8869 8.24232 63.3708 7.725C63.8546 7.2082 64.639 7.2082 65.123 7.725L71.9367 15.0061C72.4207 15.5233 72.4207 16.3613 71.9367 16.8787C71.6947 17.1372 71.3777 17.2664 71.0606 17.2664Z" fill="#4A80AA"/>
+        <path d="M71.8602 62.2424L30.3756 17.5267C24.8756 30.7953 23.9206 45.039 28.038 57.3217C39.4094 68.2831 56.3961 69.9663 72.034 63.0759L71.8602 62.2424Z" fill="#B5DCFF"/>
+        <path d="M30.5966 17.765L21.0919 7.52002L20.1394 7.62043C13.4429 24.9755 15.3982 43.8865 26.7474 56.0145C27.4349 56.7491 28.1462 57.4462 28.8785 58.1075C24.0943 45.8393 24.8718 31.2479 30.5966 17.765Z" fill="#8BCAFF"/>
+        <path d="M75.6513 59.0638L33.5771 14.1025C33.1631 14.1707 32.7645 14.3719 32.4457 14.7126L30.6156 16.6684C30.2226 17.0884 30.0272 17.6369 30.0215 18.1874L71.9623 63.0059C72.5859 63.6723 73.5969 63.6723 74.2205 63.0059L75.6515 61.4769C76.2749 60.8107 76.2749 59.7302 75.6513 59.0638Z" fill="#DBEDFF"/>
+        <path d="M30.6788 16.7015L32.4707 14.7866C32.8007 14.434 33.2174 14.2321 33.6475 14.1775L23.8937 3.75443C23.2701 3.08804 22.2591 3.08804 21.6354 3.75443L20.2044 5.28358C19.5808 5.94997 19.5808 7.03035 20.2044 7.69674L30.0953 18.2663C30.0823 17.7015 30.2755 17.1325 30.6788 16.7015Z" fill="#B5DCFF"/>
+      </svg>
+    </div>
+    </div>
+    <div style="width: 226px; height: 145px; left: 9px; top: 1528px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Poppins; font-weight: 400; line-height: 34.58px; word-wrap: break-word">As much of information possible with the weather </div>
+    <div style="width: 253px; height: 34px; left: 0px; top: 1478px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Calculated Weather </div>
+    <div style="width: 75.59px; height: 103px; left: 846.41px; top: 278px; position: absolute">
+    <div style="width: 58px; height: 60px; left: 145.59px; top: 1070px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; background: rgba(240, 187, 31, 0.30); border-top-left-radius: 23.94px; border-top-right-radius: 6.65px; border-bottom-right-radius: 13.30px; border-bottom-left-radius: 6.65px"></div>
+    <img style="width: 46.91px; height: 86.48px; left: 70px; top: 1086.52px; position: absolute; border-top-left-radius: 39.90px; border-top-right-radius: 46.55px" src="image 25.png" />
+    </div>
+    <div style="width: 212.29px; height: 97.76px; left: 842px; top: 1517px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Poppins; font-weight: 400; line-height: 34.58px; word-wrap: break-word">Getting good iternary based on the events </div>
+    <div style="width: 201px; height: 33px; left: 850px; top: 1478px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Local Events</div>
+    <div style="width: 84.64px; height: 86px; left: 1113px; top: 295px; position: absolute">
+    <div style="width: 58.64px; height: 62.67px; left: 126px; top: 1070px; position: absolute"><svg xmlns="http://www.w3.org/2000/svg" width="85" height="86" viewBox="0 0 85 86" fill="none">
+      <path d="M-1.95869e-06 62.0578C-8.76936e-07 75.2807 10.7193 86 23.9422 86L51.3494 86C55.0224 86 58 83.0224 58 79.3494L58 39.3012C58 31.9552 52.0448 26 44.6988 26L6.6506 26C2.97757 26 -4.66496e-06 28.9776 -4.36447e-06 32.6506L-1.95869e-06 62.0578Z" fill="#FBEBBC"/>
+      <path d="M84.6423 34.9029V27.7634C84.6423 26.3638 83.5806 25.2293 82.2709 25.2293H79.7156C78.694 25.2293 77.7874 24.5298 77.4662 23.4933C77.1085 22.3387 76.6738 21.2216 76.1688 20.1488C75.7089 19.1717 75.8849 17.9905 76.6085 17.2171L78.4164 15.2852C79.3426 14.2955 79.3426 12.691 78.4164 11.7013L73.6922 6.65297C72.7661 5.66329 71.2647 5.66329 70.3385 6.65297L68.5306 8.5849C67.8069 9.35833 66.7015 9.54633 65.7872 9.05484C64.7833 8.51518 63.7379 8.05066 62.6574 7.66836C61.6875 7.32515 61.0329 6.3564 61.0329 5.2646V2.53414C61.0329 1.13455 59.9712 0 58.6615 0H51.9805C50.6708 0 49.6091 1.13455 49.6091 2.53414V5.26473C49.6091 6.35653 48.9545 7.32527 47.9846 7.66849C46.9041 8.05079 45.8587 8.5153 44.8548 9.05497C43.9405 9.54646 42.8351 9.35833 42.1114 8.58503L40.3035 6.65309C39.3774 5.66342 37.8759 5.66342 36.9498 6.65309L32.2258 11.7014C31.2997 12.6911 31.2997 14.2956 32.2258 15.2853L34.0337 17.2172C34.7573 17.9906 34.9334 19.1719 34.4735 20.1489C33.9684 21.2217 33.5338 22.3388 33.176 23.4934C32.949 24.2259 32.4297 24.79 31.784 25.0579C31.5161 25.1692 31.3443 25.3554 31.0446 25.3554H28.4893C27.1796 25.3554 26.1179 26.4899 26.1179 27.8895V34.7768C26.1179 36.1764 27.1796 37.3109 28.4893 37.3109H31.0446C32.0663 37.3109 32.9728 38.1365 33.294 39.173C33.6518 40.3276 34.0864 41.4446 34.5915 42.5175C35.0514 43.4946 34.8753 44.6758 34.1517 45.4492L32.4618 47.3811C31.5357 48.3708 31.5357 49.9753 32.4618 50.965L36.95 55.7612C37.8761 56.7508 39.3776 56.7508 40.3037 55.7612L42.1116 53.8292C42.8352 53.0558 43.9407 52.8678 44.855 53.3593C45.8589 53.8989 47.1403 54.4895 48.2208 54.8718C49.1907 55.2151 49.8453 56.1838 49.8453 57.2756V60.0062C49.8453 61.4058 50.907 62.5403 52.2167 62.5403H58.5437C59.8535 62.5403 60.9152 61.4058 60.9152 60.0062V57.2756C60.9152 56.9553 61.0894 56.7718 61.1935 56.4854C61.4442 55.7954 61.9723 55.2405 62.6576 54.9979C63.738 54.6156 64.7834 54.1511 65.7873 53.6115C66.7016 53.12 67.807 53.3081 68.5308 54.0814L70.3386 56.0133C71.2648 57.003 72.7662 57.003 73.6924 56.0133L78.4165 50.965C79.3427 49.9753 79.3427 48.3708 78.4165 47.3811L76.6087 45.4492C75.885 44.6758 75.709 43.4946 76.1689 42.5175C76.6739 41.4447 77.1086 40.3276 77.4664 39.173C77.7875 38.1365 78.6941 37.437 79.7158 37.437H82.271C83.5806 37.437 84.6423 36.3024 84.6423 34.9029Z" fill="#B6C4CF"/>
+      <path d="M61.1937 56.4862C61.0899 56.7724 61.0332 57.0826 61.0332 57.4029V60.1327C61.0332 61.5323 59.9713 62.6671 58.6616 62.6671H51.9808C50.6711 62.6671 49.6092 61.5323 49.6092 60.1327V57.4029C49.6092 56.3109 48.9543 55.3413 47.9844 54.9983C46.9048 54.6163 45.8594 54.1523 44.8552 53.6126C43.9408 53.1209 42.8352 53.3088 42.1119 54.0817L40.3043 56.0134C39.378 57.0032 37.876 57.0032 36.9497 56.0134L32.2253 50.966C31.3002 49.9762 31.3002 48.3711 32.2253 47.3813L34.0341 45.4496C34.7574 44.6767 34.9332 43.4952 34.4731 42.518C33.968 41.445 33.5338 40.3279 33.1763 39.1742C32.8554 38.1377 31.948 37.4379 30.9262 37.4379H28.3717C27.0619 37.4379 26 36.3031 26 34.9035V27.7643C26 26.3648 27.0619 25.23 28.3717 25.23H30.9262C31.2259 25.23 31.5162 25.1694 31.784 25.0585C31.7816 25.2161 31.7805 25.375 31.7805 25.5338C31.7805 42.6303 44.7502 56.49 60.7489 56.49C60.8975 56.49 61.0462 56.4887 61.1937 56.4862Z" fill="#9FACBA"/>
+      <path d="M55.321 52.1375C66.0733 52.1375 74.7898 42.8229 74.7898 31.3328C74.7898 19.8427 66.0733 10.5281 55.321 10.5281C44.5687 10.5281 35.8522 19.8427 35.8522 31.3328C35.8522 42.8229 44.5687 52.1375 55.321 52.1375Z" fill="#9FACBA"/>
+      <path d="M55.3211 47.7259C63.7926 47.7259 70.6602 40.3872 70.6602 31.3343C70.6602 22.2815 63.7926 14.9427 55.3211 14.9427C46.8496 14.9427 39.9821 22.2815 39.9821 31.3343C39.9821 40.3872 46.8496 47.7259 55.3211 47.7259Z" fill="#F8F7F7"/>
+    </svg>
+    </div>
+    </div>
+    <div style="width: 217px; height: 166px; left: 1172px; top: 1517px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Poppins; font-weight: 400; line-height: 34.58px; word-wrap: break-word">We deliver outsourced services for customers</div>
+    <div style="width: 189px; height: 34px; left: 1188px; top: 1477px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Customization</div>
+    </div>
+    <div style="width: 228.01px; height: 75.88px; left: 50px; top: 549px; position: absolute">
+    <div style="width: 228.01px; height: 75.88px; left: 0px; top: 0px; position: absolute; background: #4B40C5; box-shadow: 0px 26.60243034362793px 46.55425262451172px rgba(241, 165, 1, 0.15); border-radius: 13.30px"></div>
+    <div style="width: 195px; height: 29px; left: 16px; top: 24px; position: absolute; text-align: center; color: #FFF1DA; font-size: 23.94px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Find out more</div>
+    </div>
+    <div style="width: 1338px; height: 605px; left: 38.60px; top: 2791px; position: absolute">
+    <div style="width: 686px; height: 155px; left: 3px; top: 50px; position: absolute; color: #14183E; font-size: 64px; font-family: Poppins; font-weight: 700; text-transform: capitalize; word-wrap: break-word">Book your next trip <br/>in 3 easy steps</div>
+    <div style="width: 581.22px; height: 566.83px; left: 756.78px; top: 6px; position: absolute">
+    <div style="width: 424.23px; height: 439.81px; left: 120.22px; top: 0px; position: absolute; opacity: 0.80; background: #4B40C5; box-shadow: 199.5182342529297px 199.5182342529297px 199.5182342529297px; border-radius: 9999px; filter: blur(199.52px)"></div>
+    <div style="width: 581.22px; height: 479.35px; left: 0px; top: 87.47px; position: absolute">
+    <div style="width: 443.40px; height: 479.35px; left: 0px; top: 0px; position: absolute">
+    <div style="width: 443.40px; height: 479.35px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 0px 2.4631879329681396px 4.187419891357422px rgba(0, 0, 0, 0); border-radius: 34.58px"></div>
+    <div style="width: 166.58px; height: 43.14px; left: 33.55px; top: 339.14px; position: absolute">
+    <div style="width: 43.14px; height: 43.14px; left: -0px; top: 0px; position: absolute">
+    <div style="width: 43.14px; height: 43.14px; left: 0px; top: 0px; position: absolute; background: #F5F5F5; border-radius: 9999px"></div>
+    <div style="width: 16.78px; height: 16.78px; left: 13.18px; top: 8.38px; position: absolute">
+      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+        <g clip-path="url(#clip0_0_165)">
+          <path d="M16.4816 0.177331C16.0395 0.047962 5.22644 -1.02861 1.42896 4.10185C-0.252899 6.37466 -0.278164 9.4903 1.34468 13.3615C0.933016 14.216 0.572631 15.1161 0.278929 16.0658C0.189636 16.3544 0.35115 16.6604 0.639413 16.7494C0.693153 16.7661 0.747581 16.7739 0.801321 16.7739C1.03437 16.7739 1.25074 16.6234 1.32296 16.3889C4.21731 7.03143 13.6233 2.5044 16.5078 1.36076C16.7885 1.24938 17.1636 0.376955 16.4816 0.177331Z" fill="#84829A"/>
+          <path d="M3.08044 14.5333C4.64601 15.1901 6.21135 15.5267 7.66702 15.5267C8.97542 15.5267 10.1956 15.2577 11.2471 14.7122C13.3632 13.6144 14.6564 11.5146 14.9866 8.6391C15.323 5.70854 15.7418 3.87293 16.0912 2.75C12.9811 4.18466 6.31231 7.90339 3.08044 14.5333Z" fill="#84829A"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_0_165">
+            <rect width="16.7774" height="16.7774" fill="white" transform="translate(0.118042 -0.00415039)"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+    </div>
+    <div style="width: 43.14px; height: 43.14px; left: 123.43px; top: 0px; position: absolute">
+    <div style="width: 43.14px; height: 43.14px; left: 0px; top: 0px; position: absolute; background: #F5F5F5; border-radius: 9999px"></div>
+    <div style="width: 16.78px; height: 16.78px; left: 10.18px; top: 8.38px; position: absolute">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+        <path d="M15.3438 1.48434L7.77303 9.08309C7.68624 9.03281 7.59497 8.99068 7.5004 8.95726L2.50214 7.26554C2.35098 7.22766 2.21682 7.14036 2.12095 7.0175C2.02509 6.89465 1.97302 6.74329 1.97302 6.58746C1.97302 6.43163 2.02509 6.28026 2.12095 6.15741C2.21682 6.03456 2.35098 5.94725 2.50214 5.90937L14.9034 1.49832C14.9845 1.47079 15.0695 1.45663 15.1551 1.45638C15.2191 1.45534 15.2829 1.46479 15.3438 1.48434Z" fill="#84829A"/>
+        <path d="M15.8261 2.4221L11.415 14.8374C11.3664 14.982 11.2717 15.1068 11.1455 15.1927C11.0192 15.2785 10.8684 15.3207 10.7159 15.3127C10.5617 15.3198 10.4095 15.2756 10.2831 15.1871C10.1566 15.0986 10.063 14.9707 10.0169 14.8234L8.35313 9.82512C8.3197 9.73054 8.27758 9.63927 8.22729 9.55248L15.84 1.98169C15.883 2.12616 15.8781 2.28064 15.8261 2.4221Z" fill="#84829A"/>
+      </svg>
+    </div>
+    </div>
+    <div style="width: 43.14px; height: 43.14px; left: 64.71px; top: 0px; position: absolute">
+    <div style="width: 43.14px; height: 43.14px; left: 0px; top: 0px; position: absolute; background: #F5F5F5; border-radius: 9999px"></div>
+    <div style="width: 16.78px; height: 16.78px; left: 11.98px; top: 8.18px; position: absolute">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+        <g clip-path="url(#clip0_0_179)">
+          <path d="M16.8119 0.797363C16.7188 0.797328 16.627 0.818955 16.5438 0.860558L12.0032 3.13147L6.86877 0.849183C6.86038 0.845602 6.8508 0.84497 6.84181 0.841389C6.81871 0.832753 6.79508 0.825555 6.7711 0.819833C6.74726 0.813408 6.72304 0.808387 6.6986 0.804841C6.64994 0.800839 6.60104 0.800839 6.55241 0.804841C6.52798 0.808387 6.50375 0.813408 6.47991 0.819833C6.45593 0.825555 6.43231 0.832753 6.4092 0.841389C6.40022 0.84497 6.39063 0.845567 6.38224 0.849183L0.989596 3.24593C0.773117 3.34205 0.633632 3.55671 0.633667 3.79355V16.9756C0.633772 17.1783 0.736324 17.3672 0.906284 17.4777C1.07628 17.5884 1.29069 17.6055 1.47609 17.5232L6.62547 15.2343L11.7749 17.5232C11.7838 17.5268 11.7934 17.5232 11.8024 17.5286C11.9475 17.5935 12.114 17.5898 12.256 17.5185C12.2656 17.5143 12.2763 17.5185 12.2859 17.5119L17.0794 15.1151C17.2825 15.0136 17.4108 14.806 17.4107 14.5788V1.39684C17.4109 1.06591 17.1428 0.797504 16.8119 0.797363ZM6.02631 14.1894L1.83202 16.0534V4.18304L6.02631 2.31896V14.1894ZM11.419 16.0534L7.22467 14.1894V2.31896L11.419 4.183V16.0534ZM16.2124 14.2085L12.6173 16.0061V4.16383L16.2124 2.36629V14.2085Z" fill="#84829A"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_0_179">
+            <rect width="16.7774" height="16.7774" fill="white" transform="translate(0.632446 0.795898)"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+    </div>
+    </div>
+    <div style="width: 19.17px; height: 19.17px; left: 49.13px; top: 417.04px; position: absolute; transform-origin: 0 0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M0.660194 19.0462H2.57761V8.50046C2.57761 8.32398 2.7207 8.18089 2.89718 8.18089H7.37115V0.8308C7.37115 0.654318 7.51423 0.51123 7.69071 0.51123H15.9995C16.176 0.51123 16.3191 0.654318 16.3191 0.8308V19.0462H19.1952C19.3717 19.0462 19.5148 19.1893 19.5148 19.3658C19.5148 19.5423 19.3717 19.6854 19.1952 19.6854H0.660194C0.483713 19.6854 0.340626 19.5423 0.340626 19.3658C0.340626 19.1893 0.483713 19.0462 0.660194 19.0462ZM12.8038 19.0462H14.0821V16.1701C14.0821 15.9936 13.939 15.8505 13.7625 15.8505H13.1234C12.9469 15.8505 12.8038 15.9936 12.8038 16.1701V19.0462ZM11.5255 8.50046V19.0462H12.1647V16.1701C12.1647 15.6406 12.5939 15.2114 13.1234 15.2114H13.7625C14.292 15.2114 14.7212 15.6406 14.7212 16.1701V19.0462H15.6799V1.15037H8.01028V8.18089H11.206C11.3825 8.18089 11.5255 8.32398 11.5255 8.50046ZM3.21675 19.0462H10.8864V8.82003H3.21675V19.0462Z" fill="#84829A"/>
+        <path d="M9.28828 4.98657H11.2057C11.3822 4.98657 11.5253 5.12966 11.5253 5.30614V7.22356C11.5253 7.40004 11.3822 7.54313 11.2057 7.54313H9.28828C9.1118 7.54313 8.96872 7.40004 8.96872 7.22356V5.30614C8.96872 5.12966 9.1118 4.98657 9.28828 4.98657ZM9.60785 6.90399H10.8861V5.62571H9.60785V6.90399Z" fill="#84829A"/>
+        <path d="M9.28828 1.78955H11.2057C11.3822 1.78955 11.5253 1.93264 11.5253 2.10912V4.02653C11.5253 4.20302 11.3822 4.3461 11.2057 4.3461H9.28828C9.1118 4.3461 8.96872 4.20302 8.96872 4.02653V2.10912C8.96872 1.93264 9.1118 1.78955 9.28828 1.78955ZM9.60785 3.70697H10.8861V2.42869H9.60785V3.70697Z" fill="#84829A"/>
+        <path d="M12.4841 4.98657H14.4015C14.578 4.98657 14.7211 5.12966 14.7211 5.30614V7.22356C14.7211 7.40004 14.578 7.54313 14.4015 7.54313H12.4841C12.3076 7.54313 12.1645 7.40004 12.1645 7.22356V5.30614C12.1645 5.12966 12.3076 4.98657 12.4841 4.98657ZM12.8037 6.90399H14.0819V5.62571H12.8037V6.90399Z" fill="#84829A"/>
+        <path d="M12.4841 1.78955H14.4015C14.578 1.78955 14.7211 1.93264 14.7211 2.10912V4.02653C14.7211 4.20302 14.578 4.3461 14.4015 4.3461H12.4841C12.3076 4.3461 12.1645 4.20302 12.1645 4.02653V2.10912C12.1645 1.93264 12.3076 1.78955 12.4841 1.78955ZM12.8037 3.70697H14.0819V2.42869H12.8037V3.70697Z" fill="#84829A"/>
+        <path d="M12.4841 8.1814H14.4015C14.578 8.1814 14.7211 8.32448 14.7211 8.50097V10.4184C14.7211 10.5949 14.578 10.7379 14.4015 10.7379H12.4841C12.3076 10.7379 12.1645 10.5949 12.1645 10.4184V8.50097C12.1645 8.32448 12.3076 8.1814 12.4841 8.1814ZM12.8037 10.0988H14.0819V8.82053H12.8037V10.0988Z" fill="#84829A"/>
+        <path d="M12.4841 11.3767H14.4015C14.578 11.3767 14.7211 11.5198 14.7211 11.6963V13.6137C14.7211 13.7902 14.578 13.9333 14.4015 13.9333H12.4841C12.3076 13.9333 12.1645 13.7902 12.1645 13.6137V11.6963C12.1645 11.5198 12.3076 11.3767 12.4841 11.3767ZM12.8037 13.2941H14.0819V12.0158H12.8037V13.2941Z" fill="#84829A"/>
+        <path d="M6.41236 15.2101H4.49495C4.31847 15.2101 4.17538 15.067 4.17538 14.8905V12.9731C4.17538 12.7967 4.31847 12.6536 4.49495 12.6536H6.41236C6.58885 12.6536 6.73193 12.7967 6.73193 12.9731V14.8905C6.73193 15.067 6.58885 15.2101 6.41236 15.2101ZM6.0928 13.2927H4.81452V14.571H6.0928V13.2927Z" fill="#84829A"/>
+        <path d="M6.41236 12.0153H4.49495C4.31847 12.0153 4.17538 11.8722 4.17538 11.6957V9.77831C4.17538 9.60183 4.31847 9.45874 4.49495 9.45874H6.41236C6.58885 9.45874 6.73193 9.60183 6.73193 9.77831V11.6957C6.73193 11.8722 6.58885 12.0153 6.41236 12.0153ZM6.0928 10.0979H4.81452V11.3762H6.0928V10.0979Z" fill="#84829A"/>
+        <path d="M6.41236 18.4064H4.49495C4.31847 18.4064 4.17538 18.2633 4.17538 18.0868V16.1694C4.17538 15.9929 4.31847 15.8499 4.49495 15.8499H6.41236C6.58885 15.8499 6.73193 15.9929 6.73193 16.1694V18.0868C6.73193 18.2633 6.58885 18.4064 6.41236 18.4064ZM6.0928 16.489H4.81452V17.7673H6.0928V16.489Z" fill="#84829A"/>
+        <path d="M9.60817 15.2101H7.69075C7.51427 15.2101 7.37118 15.067 7.37118 14.8905V12.9731C7.37118 12.7967 7.51427 12.6536 7.69075 12.6536H9.60817C9.78465 12.6536 9.92773 12.7967 9.92773 12.9731V14.8905C9.92773 15.067 9.78465 15.2101 9.60817 15.2101ZM9.2886 13.2927H8.01032V14.571H9.2886V13.2927Z" fill="#84829A"/>
+        <path d="M9.60817 12.0153H7.69075C7.51427 12.0153 7.37118 11.8722 7.37118 11.6957V9.77831C7.37118 9.60183 7.51427 9.45874 7.69075 9.45874H9.60817C9.78465 9.45874 9.92773 9.60183 9.92773 9.77831V11.6957C9.92773 11.8722 9.78465 12.0153 9.60817 12.0153ZM9.2886 10.0979H8.01032V11.3762H9.2886V10.0979Z" fill="#84829A"/>
+        <path d="M9.60817 18.4064H7.69075C7.51427 18.4064 7.37118 18.2633 7.37118 18.0868V16.1694C7.37118 15.9929 7.51427 15.8499 7.69075 15.8499H9.60817C9.78465 15.8499 9.92773 15.9929 9.92773 16.1694V18.0868C9.92773 18.2633 9.78465 18.4064 9.60817 18.4064ZM9.2886 16.489H8.01032V17.7673H9.2886V16.489Z" fill="#84829A"/>
+      </svg>
+    <div style="width: 2.56px; height: 2.56px; left: -7.99px; top: 4.48px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; background: #84829A"></div>
+    <div style="width: 2.56px; height: 2.56px; left: -7.99px; top: 1.28px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; background: #84829A"></div>
+    <div style="width: 2.56px; height: 2.56px; left: -4.79px; top: 4.48px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; background: #84829A"></div>
+    <div style="width: 2.56px; height: 2.56px; left: -4.79px; top: 1.28px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; background: #84829A"></div>
+    <div style="width: 2.56px; height: 2.56px; left: -4.79px; top: 7.67px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; background: #84829A"></div>
+    <div style="width: 2.56px; height: 2.56px; left: -4.79px; top: 10.87px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; background: #84829A"></div>
+    <div style="width: 2.56px; height: 2.56px; left: -12.78px; top: 12.14px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; background: #84829A"></div>
+    <div style="width: 2.56px; height: 2.56px; left: -12.78px; top: 8.95px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; background: #84829A"></div>
+    <div style="width: 2.56px; height: 2.56px; left: -12.78px; top: 15.34px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; background: #84829A"></div>
+    <div style="width: 2.56px; height: 2.56px; left: -9.59px; top: 12.14px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; background: #84829A"></div>
+    <div style="width: 2.56px; height: 2.56px; left: -9.59px; top: 8.95px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; background: #84829A"></div>
+    <div style="width: 2.56px; height: 2.56px; left: -9.59px; top: 15.34px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; background: #84829A"></div>
+    </div>
+    <div style="width: 151.36px; height: 23.42px; left: 67.11px; top: 418.24px; position: absolute;text-align: center; color: #84829A; font-size: 21.28px; font-family: Poppins; font-weight: 500; line-height: 26.50px; word-wrap: break-word">24 people going</div>
+    <div style="width: 105.41px; height: 23.42px; left: 29.96px; top: 290.01px; position: absolute;text-align: center; color: #84829A; font-size: 21.28px; font-family: Poppins; font-weight: 500; line-height: 26.50px; word-wrap: break-word">14-29 June</div>
+    <div style="width: 165.78px; height: 23.42px; left: 154.59px; top: 290.01px; position: absolute; color: #84829A; font-size: 21.28px; font-family: Poppins; font-weight: 500; line-height: 26.50px; word-wrap: break-word">by Robbin joseph</div>
+    <img style="width: 384.68px; height: 192.94px; left: 29.96px; top: 23.97px; position: absolute; border-radius: 31.92px" src="Rectangle 17.png" />
+    <div style="width: 218px; height: 27px; left: 30.22px; top: 248.53px; position: absolute; color: #080809; font-size: 24px; font-family: Poppins; font-weight: 500; line-height: 29.88px; letter-spacing: 0.36px; word-wrap: break-word">Trip To Greece</div>
+    <div style="width: 19.17px; height: 0px; left: 139.01px; top: 291.21px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; background: #84829A; border: 1.33px #84829A solid"></div>
+    </div>
+    <div style="width: 315.18px; height: 154.59px; left: 266.04px; top: 262.45px; position: absolute">
+    <div style="width: 315.18px; height: 154.59px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 0px 2.4631879329681396px 4.187419891357422px rgba(0, 0, 0, 0); border-radius: 23.94px"></div>
+    <div style="width: 150px; height: 27px; left: 97.18px; top: 47.08px; position: absolute; color: #080809; font-size: 23.94px; font-family: Poppins; font-weight: 500; line-height: 29.81px; word-wrap: break-word">Trip to rome</div>
+    <div style="width: 151px; height: 21px; left: 96.18px; top: 90.08px; position: absolute"><span style="color: #8A79DF; font-size: 18.62px; font-family: Poppins; font-weight: 500; line-height: 23.18px; word-wrap: break-word">40%</span><span style="color: #080809; font-size: 18.62px; font-family: Poppins; font-weight: 500; line-height: 23.18px; word-wrap: break-word"> completed</span></div>
+    <div style="width: 59.92px; height: 59.92px; left: 23.97px; top: 21.57px; position: absolute; opacity: 0.30; background: white; box-shadow: 1.330121397972107px 11.971094131469727px 7.980728626251221px rgba(105.19, 103.87, 103.87, 0.13); border-radius: 9999px"></div>
+    <div style="width: 59.92px; height: 59.92px; left: 23.97px; top: 21.57px; position: absolute">
+    <div style="width: 59.92px; height: 59.92px; left: 0px; top: 0px; position: absolute; background: white; border-radius: 9999px"></div>
+    <img style="width: 88.68px; height: 79.09px; left: -15.58px; top: -1.20px; position: absolute;border-radius: 999px;" src="image 32.png" />
+    </div>
+    <div style="width: 107px; height: 21px; left: 98.18px; top: 19.08px; position: absolute; color: #84829A; font-size: 18.62px; font-family: Poppins; font-weight: 500; line-height: 23.18px; word-wrap: break-word">Ongoing</div>
+    <div style="width: 186.95px; height: 5.99px; left: 98.27px; top: 122.24px; position: absolute">
+    <div style="width: 186.95px; height: 5.99px; left: 0px; top: 0px; position: absolute; background: #F5F5F5; border-radius: 39.90px"></div>
+    <div style="width: 87.48px; height: 5.99px; left: 0px; top: 0px; position: absolute; background: #8A79DF; border-radius: 39.90px"></div>
+    </div>
+    </div>
+    <div style="width: 23.97px; height: 22.27px; left: 389.47px; top: 419.08px; position: absolute">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+        <path d="M22.8629 2.64954C21.6232 1.31704 19.886 0.558858 18.066 0.556048C16.2445 0.558156 14.5056 1.31593 13.264 2.64869L12.8408 3.09584L12.4177 2.64869C9.95396 -0.00292438 5.80712 -0.155203 3.15556 2.3085C3.03806 2.41771 2.92458 2.53115 2.81537 2.64869C0.201844 5.46769 0.201844 9.82433 2.81537 12.6433L12.219 22.56C12.5443 22.9035 13.0865 22.9182 13.4299 22.5929C13.4412 22.5822 13.4521 22.5713 13.4627 22.56L22.8629 12.6433C25.4762 9.82463 25.4762 5.46825 22.8629 2.64954ZM21.6234 11.4638H21.6226L12.8408 20.7261L4.05828 11.4638C2.0617 9.30983 2.0617 5.98134 4.05828 3.82737C5.87142 1.86221 8.93439 1.73899 10.8996 3.55212C10.995 3.64016 11.0868 3.73195 11.1748 3.82737L12.219 4.92895C12.5631 5.27085 13.1186 5.27085 13.4627 4.92895L14.5069 3.82822C16.32 1.86306 19.383 1.73984 21.3482 3.55297C21.4436 3.64101 21.5354 3.73281 21.6234 3.82822C23.6374 5.98561 23.6521 9.32017 21.6234 11.4638Z" fill="#4152CA"/>
+      </svg>
+    </div>
+    </div>
+    </div>
+    <div style="width: 204px; height: 32px; left: 7px; top: 0px; position: absolute; text-align: center; color: #5E6282; font-size: 23.94px; font-family: Poppins; font-weight: 600; word-wrap: break-word">Easy and Fast</div>
+    <div style="width: 532px; height: 362px; left: 0px; top: 243px; position: absolute">
+    <div style="width: 529px; height: 87px; left: 3px; top: 0px; position: absolute">
+    <div style="width: 56.32px; height: 57.52px; left: 0px; top: 5.07px; position: absolute"><svg xmlns="http://www.w3.org/2000/svg" width="57" height="58" viewBox="0 0 57 58" fill="none">
+      <rect x="0.597321" y="0.0678711" width="56.3241" height="57.5224" rx="17.2916" fill="#F0BB1F"/>
+      <path d="M16.829 21.0103C16.4736 21.0103 16.1828 20.7195 16.1764 20.3641V16.2996C16.1764 15.9378 16.4672 15.647 16.829 15.647H20.8936C21.249 15.647 21.5397 15.9378 21.5397 16.2996V17.7148H37.1775V16.2996C37.1775 15.9442 37.4683 15.6534 37.8237 15.647H41.8882C42.2436 15.647 42.5344 15.9378 42.5408 16.2996V20.3641C42.5408 20.7195 42.25 21.0103 41.8882 21.0103H40.473V36.6481H41.8882C42.2436 36.6481 42.5344 36.9388 42.5408 37.2943V41.3588C42.5408 41.7142 42.25 42.005 41.8882 42.0114H37.8237C37.4683 42.0114 37.1775 41.7206 37.1775 41.3588V39.9436H21.5397V41.3588C21.5397 41.7142 21.249 42.005 20.8936 42.0114H16.829C16.4736 42.0114 16.1828 41.7206 16.1764 41.3588V37.2943C16.1764 36.9388 16.4672 36.6481 16.829 36.6481H18.2442V21.0103H16.829ZM41.2485 19.718V16.9393H38.4699V19.718H41.2485ZM38.4699 40.719H41.2485V37.9404H38.4699V40.719ZM21.5397 37.2943V38.6512H37.1775V37.2943C37.1775 36.9388 37.4683 36.6481 37.8237 36.6481H39.1807V21.0103H37.8237C37.4683 21.0103 37.1775 20.7195 37.1775 20.3641V19.0071H21.5397V20.3641C21.5397 20.7195 21.249 21.0103 20.8936 21.0103H19.5366V36.6481H20.8936C21.249 36.6481 21.5397 36.9388 21.5397 37.2943ZM17.4688 37.9404V40.719H20.2474V37.9404H17.4688ZM20.2474 19.718V16.9393H17.4688V19.718H20.2474Z" fill="white"/>
+    </svg>
+    </div>
+    <div style="width: 268px; height: 24px; left: 81px; top: 0px; position: absolute; color: #5E6282; font-size: 24px; font-family: Poppins; font-weight: 700; line-height: 29.88px; word-wrap: break-word">Choose Destination</div>
+    <div style="width: 448px; height: 47px; left: 81px; top: 40px; position: absolute; color: #5E6282; font-size: 18px; font-family: Poppins; font-weight: 400; line-height: 22.41px; word-wrap: break-word">Lorem ipsum dolor sit amet, consectetur <br/>adipiscing elit. Urna, tortor tempus. </div>
+    </div>
+    <div style="width: 517px; height: 93px; left: 1px; top: 269px; position: absolute">
+    <div style="width: 56.32px; height: 57.52px; left: 0px; top: 10px; position: absolute">
+      <div style="width: 26.96px; height: 22.47px; left: 0px; top: 18px; position: absolute">
+        <svg xmlns="http://www.w3.org/2000/svg" width="57" height="58" viewBox="0 0 57 58" fill="none">
+          <rect x="0.59729" width="56.3241" height="57.5224" rx="17.2916" fill="#4B40C5"/>
+          <path d="M20.0913 30.5835C19.7358 30.5835 19.3882 30.6889 19.0926 30.8864C18.797 31.084 18.5666 31.3647 18.4305 31.6932C18.2945 32.0216 18.2589 32.3831 18.3282 32.7318C18.3976 33.0805 18.5688 33.4008 18.8202 33.6522C19.0716 33.9036 19.3919 34.0748 19.7406 34.1441C20.0893 34.2135 20.4507 34.1779 20.7792 34.0418C21.1076 33.9058 21.3884 33.6754 21.5859 33.3798C21.7834 33.0841 21.8889 32.7366 21.8889 32.3811C21.8889 31.9043 21.6995 31.4471 21.3624 31.11C21.0252 30.7729 20.568 30.5835 20.0913 30.5835ZM20.0913 33.2799C19.9135 33.2799 19.7397 33.2272 19.5919 33.1284C19.4441 33.0296 19.3289 32.8893 19.2609 32.725C19.1929 32.5608 19.1751 32.3801 19.2098 32.2057C19.2444 32.0314 19.33 31.8712 19.4557 31.7455C19.5814 31.6198 19.7416 31.5342 19.9159 31.4996C20.0903 31.4649 20.271 31.4827 20.4352 31.5507C20.5995 31.6187 20.7398 31.7339 20.8386 31.8817C20.9374 32.0295 20.9901 32.2033 20.9901 32.3811C20.9901 32.6195 20.8954 32.8481 20.7268 33.0166C20.5583 33.1852 20.3297 33.2799 20.0913 33.2799Z" fill="white"/>
+          <path d="M38.067 30.5835C37.7115 30.5835 37.3639 30.6889 37.0683 30.8864C36.7727 31.084 36.5423 31.3647 36.4063 31.6932C36.2702 32.0216 36.2346 32.3831 36.304 32.7318C36.3733 33.0805 36.5445 33.4008 36.7959 33.6522C37.0473 33.9036 37.3676 34.0748 37.7163 34.1441C38.065 34.2135 38.4265 34.1779 38.7549 34.0418C39.0834 33.9058 39.3641 33.6754 39.5616 33.3798C39.7592 33.0841 39.8646 32.7366 39.8646 32.3811C39.8646 31.9043 39.6752 31.4471 39.3381 31.11C39.001 30.7729 38.5438 30.5835 38.067 30.5835ZM38.067 33.2799C37.8892 33.2799 37.7155 33.2272 37.5677 33.1284C37.4199 33.0296 37.3047 32.8893 37.2366 32.725C37.1686 32.5608 37.1508 32.3801 37.1855 32.2057C37.2202 32.0314 37.3058 31.8712 37.4315 31.7455C37.5572 31.6198 37.7173 31.5342 37.8917 31.4996C38.066 31.4649 38.2467 31.4827 38.411 31.5507C38.5752 31.6187 38.7156 31.7339 38.8143 31.8817C38.9131 32.0295 38.9658 32.2033 38.9658 32.3811C38.9658 32.6195 38.8711 32.8481 38.7025 33.0166C38.534 33.1852 38.3054 33.2799 38.067 33.2799Z" fill="white"/>
+          <path d="M25.0345 32.8293H33.1236V33.7281H25.0345V32.8293Z" fill="white"/>
+          <path d="M25.0345 31.0327H33.1236V31.9315H25.0345V31.0327Z" fill="white"/>
+          <path d="M27.731 24.2913H30.4274V25.19H27.731V24.2913Z" fill="white"/>
+          <path d="M42.5609 28.3361V27.4373C42.5599 27.08 42.4175 26.7377 42.1649 26.4851C41.9123 26.2325 41.57 26.0902 41.2128 26.0891H39.4332L38.5029 22.8265L38.2243 21.7165C38.1512 21.425 37.9828 21.1664 37.7458 20.9815C37.5089 20.7967 37.217 20.6963 36.9165 20.6964H33.1237V18.8988C33.1229 18.6606 33.028 18.4324 32.8596 18.264C32.6912 18.0956 32.463 18.0007 32.2249 18H25.9334C25.6952 18.0007 25.467 18.0956 25.2986 18.264C25.1302 18.4324 25.0353 18.6606 25.0346 18.8988V20.6964H21.2417C20.9412 20.6963 20.6493 20.7967 20.4124 20.9815C20.1755 21.1664 20.0071 21.425 19.9339 21.7165L19.6598 22.822L18.7251 26.0891H16.9455C16.5882 26.0902 16.2459 26.2325 15.9933 26.4851C15.7407 26.7377 15.5984 27.08 15.5973 27.4373V28.3361C15.598 28.5637 15.6565 28.7875 15.7674 28.9863C15.8782 29.1852 16.0377 29.3527 16.2309 29.473C15.8247 29.8905 15.5973 30.4499 15.5973 31.0324V36.4252C15.5979 36.6137 15.6382 36.8 15.7157 36.9719C15.7931 37.1438 15.9059 37.2974 16.0467 37.4228V39.1215C16.0478 39.4788 16.1901 39.821 16.4427 40.0736C16.6953 40.3263 17.0376 40.4686 17.3949 40.4697H20.99C21.3473 40.4686 21.6895 40.3263 21.9421 40.0736C22.1948 39.821 22.3371 39.4788 22.3382 39.1215V37.7733H35.82V39.1215C35.8211 39.4788 35.9635 39.821 36.2161 40.0736C36.4687 40.3263 36.811 40.4686 37.1682 40.4697H40.7634C41.1206 40.4686 41.4629 40.3263 41.7155 40.0736C41.9681 39.821 42.1105 39.4788 42.1115 39.1215V37.4228C42.2523 37.2974 42.3651 37.1438 42.4425 36.9719C42.52 36.8 42.5603 36.6137 42.5609 36.4252V31.0324C42.5609 30.4499 42.3335 29.8905 41.9273 29.473C42.1205 29.3527 42.28 29.1852 42.3909 28.9863C42.5017 28.7875 42.5602 28.5637 42.5609 28.3361ZM25.9334 18.8988H32.2249V20.6964H25.9334V18.8988ZM20.8058 21.9367C20.8299 21.8393 20.8859 21.7527 20.9649 21.6908C21.0439 21.6289 21.1413 21.5952 21.2417 21.5952H36.9165C37.0169 21.5952 37.1144 21.6289 37.1934 21.6908C37.2724 21.7527 37.3284 21.8393 37.3525 21.9367L37.4918 22.4939H20.6665L20.8058 21.9367ZM20.4283 23.3927H37.7299L39.2669 28.7855H26.3423C26.2367 28.1574 25.9119 27.5872 25.4257 27.1759C24.9395 26.7646 24.3232 26.5389 23.6864 26.5389C23.0495 26.5389 22.4333 26.7646 21.9471 27.1759C21.4608 27.5872 21.1361 28.1574 21.0305 28.7855H18.8913L20.4283 23.3927ZM25.421 28.7855H21.9517C22.0498 28.3998 22.2737 28.0579 22.5878 27.8137C22.9019 27.5695 23.2885 27.4369 23.6864 27.4369C24.0843 27.4369 24.4708 27.5695 24.785 27.8137C25.0991 28.0579 25.3229 28.3998 25.421 28.7855ZM16.4961 27.4373C16.4961 27.3181 16.5434 27.2038 16.6277 27.1195C16.712 27.0352 16.8263 26.9879 16.9455 26.9879H18.4689L17.9566 28.7855H16.9455C16.8263 28.7855 16.712 28.7381 16.6277 28.6538C16.5434 28.5696 16.4961 28.4552 16.4961 28.3361V27.4373ZM21.4394 39.1215C21.4394 39.2407 21.3921 39.355 21.3078 39.4393C21.2235 39.5236 21.1092 39.5709 20.99 39.5709H17.3949C17.2757 39.5709 17.1614 39.5236 17.0771 39.4393C16.9928 39.355 16.9455 39.2407 16.9455 39.1215V37.7733H21.4394V39.1215ZM41.2128 39.1215C41.2128 39.2407 41.1654 39.355 41.0811 39.4393C40.9969 39.5236 40.8825 39.5709 40.7634 39.5709H37.1682C37.049 39.5709 36.9347 39.5236 36.8504 39.4393C36.7662 39.355 36.7188 39.2407 36.7188 39.1215V37.7733H41.2128V39.1215ZM41.6621 36.4252C41.6621 36.5443 41.6148 36.6586 41.5305 36.7429C41.4462 36.8272 41.3319 36.8745 41.2128 36.8745H16.9455C16.8263 36.8745 16.712 36.8272 16.6277 36.7429C16.5434 36.6586 16.4961 36.5443 16.4961 36.4252V35.9758H41.6621V36.4252ZM41.6621 35.077H16.4961V31.0324C16.4971 30.6752 16.6395 30.3329 16.8921 30.0803C17.1447 29.8277 17.487 29.6853 17.8443 29.6842H40.314C40.6712 29.6853 41.0135 29.8277 41.2661 30.0803C41.5187 30.3329 41.6611 30.6752 41.6621 31.0324V35.077ZM41.6621 28.3361C41.6621 28.4552 41.6148 28.5696 41.5305 28.6538C41.4462 28.7381 41.3319 28.7855 41.2128 28.7855H40.2016L39.6893 26.9879H41.2128C41.3319 26.9879 41.4462 27.0352 41.5305 27.1195C41.6148 27.2038 41.6621 27.3181 41.6621 27.4373V28.3361Z" fill="white"/>
+        </svg>
+    </div>
+    </div>
+    <div style="width: 434px; height: 54px; left: 83px; top: 39px; position: absolute; color: #5E6282; font-size: 18px; font-family: Poppins; font-weight: 400; line-height: 22.41px; word-wrap: break-word">Lorem ipsum dolor sit amet, consectetur <br/>adipiscing elit. Urna, tortor tempus. </div>
+    <div style="width: 375px; height: 23px; left: 83px; top: 0px; position: absolute; color: #5E6282; font-size: 21.28px; font-family: Poppins; font-weight: 700; line-height: 26.50px; word-wrap: break-word">Reach Airport on Selected Date</div>
+    </div>
+    <div style="width: 518px; height: 87px; left: 0px; top: 134px; position: absolute">
+    <div style="width: 434px; height: 47px; left: 84px; top: 40px; position: absolute; color: #5E6282; font-size: 18px; font-family: Poppins; font-weight: 400; line-height: 22.41px; word-wrap: break-word">Lorem ipsum dolor sit amet, consectetur <br/>adipiscing elit. Urna, tortor tempus. </div>
+    <div style="width: 190px; height: 24px; left: 84px; top: 0px; position: absolute; color: #5E6282; font-size: 24px; font-family: Poppins; font-weight: 700; line-height: 29.88px; word-wrap: break-word">Make Payment</div>
+    <div style="width: 56.32px; height: 57.52px; left: 0px; top: 12px; position: absolute"><svg xmlns="http://www.w3.org/2000/svg" width="57" height="58" viewBox="0 0 57 58" fill="none">
+      <rect x="0.59729" width="56.3241" height="57.5224" rx="17.2916" fill="#F15A2B"/>
+      <path d="M39.9263 38.2621C39.3869 38.2731 38.857 38.1187 38.4078 37.8198C38.0735 37.6013 37.6828 37.485 37.2834 37.485C36.884 37.485 36.4933 37.6013 36.159 37.8198C35.7053 38.1086 35.1786 38.2621 34.6407 38.2621C34.1028 38.2621 33.5761 38.1086 33.1224 37.8198C32.788 37.6011 32.3972 37.4846 31.9978 37.4846C31.5983 37.4846 31.2075 37.6011 30.8732 37.8198C30.4194 38.1086 29.8927 38.2621 29.3548 38.2621C28.817 38.2621 28.2902 38.1086 27.8365 37.8198C27.5024 37.6012 27.1119 37.4848 26.7127 37.4848C26.3135 37.4848 25.9229 37.6012 25.5889 37.8198C25.1775 38.0931 24.6974 38.2451 24.2037 38.2582L24.1765 37.4808C24.5412 37.4722 24.8953 37.3568 25.1951 37.1489C25.6488 36.8601 26.1753 36.7067 26.7131 36.7067C27.2508 36.7067 27.7774 36.8601 28.231 37.1489C28.5653 37.3675 28.956 37.4839 29.3554 37.4839C29.7548 37.4839 30.1455 37.3675 30.4798 37.1489C30.9336 36.8599 31.4605 36.7063 31.9985 36.7063C32.5366 36.7063 33.0634 36.8599 33.5172 37.1489C33.8515 37.3675 34.2423 37.4839 34.6417 37.4839C35.041 37.4839 35.4318 37.3675 35.7661 37.1489C36.2198 36.8601 36.7465 36.7068 37.2844 36.7068C37.8222 36.7068 38.3489 36.8601 38.8027 37.1489C39.1378 37.368 39.5295 37.4846 39.9298 37.4846C40.3302 37.4846 40.7219 37.368 41.057 37.1489C41.5056 36.8508 42.0346 36.6968 42.5731 36.7074V37.4847C42.1722 37.4738 41.7781 37.591 41.4483 37.8194C40.9981 38.1188 40.467 38.2733 39.9263 38.2621Z" fill="white"/>
+      <path d="M18.787 38.2616C18.2476 38.2728 17.7178 38.1184 17.2688 37.8193C16.9391 37.5907 16.5451 37.4734 16.144 37.4843V36.707C16.6835 36.6958 17.2135 36.8501 17.6626 37.1493C17.9921 37.3779 18.386 37.4953 18.787 37.4843C19.1881 37.4953 19.5822 37.3778 19.9118 37.1489C20.3599 36.8499 20.889 36.6956 21.4276 36.707C21.9531 36.6952 22.4699 36.8424 22.9103 37.1294L22.5181 37.8003C22.1965 37.5838 21.8151 37.4733 21.4276 37.4843C21.0281 37.4735 20.6357 37.5906 20.3074 37.8185C19.8579 38.1185 19.3272 38.2731 18.787 38.2616Z" fill="white"/>
+      <path d="M39.9276 35.5421C39.3878 35.5531 38.8575 35.3988 38.408 35.0998C38.0733 34.8811 37.6823 34.7647 37.2826 34.7647C36.8829 34.7647 36.4918 34.8811 36.1572 35.0998C35.7035 35.3886 35.1769 35.542 34.6391 35.542C34.1013 35.542 33.5746 35.3886 33.1209 35.0998C32.7868 34.8812 32.3962 34.7649 31.9969 34.7649C31.5977 34.7649 31.2071 34.8812 30.8729 35.0998C30.4192 35.3886 29.8926 35.5421 29.3548 35.5421C28.817 35.5421 28.2903 35.3886 27.8366 35.0998C27.5025 34.8812 27.1119 34.7649 26.7126 34.7649C26.3134 34.7649 25.9228 34.8812 25.5886 35.0998C25.1397 35.3989 24.6098 35.5533 24.0705 35.5421C23.5311 35.5533 23.0013 35.3989 22.5524 35.0998C22.2229 34.8712 21.8291 34.7538 21.4283 34.7647C21.0277 34.7539 20.634 34.8712 20.3047 35.0998C19.8565 35.3986 19.3275 35.5529 18.7889 35.5421C18.2494 35.5533 17.7195 35.3989 17.2704 35.0998C16.9403 34.8707 16.5456 34.7533 16.144 34.7647V33.9874C16.6834 33.9763 17.2132 34.1306 17.6622 34.4297C17.9919 34.6583 18.3859 34.7757 18.787 34.7647C19.1876 34.7756 19.5813 34.6582 19.9106 34.4297C20.3588 34.1309 20.8878 33.9766 21.4264 33.9874C21.9661 33.9759 22.4964 34.1303 22.9457 34.4297C23.2752 34.6584 23.6692 34.7757 24.0701 34.7647C24.471 34.7757 24.865 34.6584 25.1945 34.4297C25.6481 34.1408 26.1748 33.9873 26.7126 33.9873C27.2505 33.9873 27.7771 34.1408 28.2308 34.4297C28.565 34.6483 28.9556 34.7647 29.355 34.7647C29.7543 34.7647 30.145 34.6483 30.4792 34.4297C30.9328 34.1408 31.4595 33.9873 31.9973 33.9873C32.5351 33.9873 33.0618 34.1408 33.5154 34.4297C33.8496 34.6483 34.2403 34.7647 34.6396 34.7647C35.039 34.7647 35.4296 34.6483 35.7639 34.4297C36.218 34.1409 36.745 33.9875 37.2832 33.9875C37.8213 33.9875 38.3483 34.1409 38.8024 34.4297C39.1373 34.6482 39.5284 34.7645 39.9282 34.7645C40.328 34.7645 40.7192 34.6482 41.054 34.4297C41.5035 34.1308 42.0336 33.9765 42.5733 33.9874V34.7647C42.1715 34.7534 41.7765 34.8708 41.4461 35.0998C40.9969 35.3985 40.4671 35.5529 39.9276 35.5421Z" fill="white"/>
+      <path d="M39.9264 32.8215C39.387 32.8325 38.8571 32.6782 38.4079 32.3792C38.0782 32.1506 37.6841 32.0332 37.2831 32.0441C36.9888 32.034 36.6965 32.0968 36.4323 32.2268L36.0895 31.5272C36.4606 31.3454 36.87 31.2556 37.2831 31.2656C37.8232 31.2546 38.3537 31.4094 38.8032 31.7091C39.1383 31.9282 39.5299 32.0448 39.9303 32.0448C40.3307 32.0448 40.7223 31.9282 41.0574 31.7091C41.5059 31.4108 42.0347 31.2565 42.5732 31.2668V32.0441C42.1722 32.0332 41.7782 32.1504 41.4484 32.3788C40.9982 32.6782 40.467 32.8327 39.9264 32.8215Z" fill="white"/>
+      <path d="M34.6367 32.8209C34.0981 32.8322 33.5691 32.6779 33.1209 32.379C32.7866 32.1603 32.3958 32.0438 31.9963 32.0438C31.5969 32.0438 31.206 32.1603 30.8717 32.379C30.418 32.6678 29.8913 32.8213 29.3534 32.8213C28.8155 32.8213 28.2888 32.6678 27.8351 32.379C27.5008 32.1604 27.1101 32.044 26.7107 32.044C26.3113 32.044 25.9206 32.1604 25.5863 32.379C25.1374 32.6776 24.6079 32.8318 24.0689 32.8209C23.5296 32.832 22.9998 32.6777 22.5508 32.3786C22.2211 32.15 21.827 32.0326 21.426 32.0435C21.0265 32.0328 20.6341 32.1499 20.3059 32.3778C19.8568 32.6774 19.3267 32.8321 18.787 32.8209C18.2476 32.832 17.7178 32.6777 17.2688 32.3786C16.9391 32.15 16.5451 32.0326 16.144 32.0435V31.2662C16.6835 31.255 17.2135 31.4094 17.6626 31.7085C17.9921 31.9371 18.386 32.0545 18.787 32.0435C19.1881 32.0546 19.5822 31.937 19.9118 31.7081C20.3599 31.4091 20.889 31.2549 21.4276 31.2662C21.9669 31.2551 22.4967 31.4094 22.9457 31.7085C23.2752 31.9371 23.6692 32.0545 24.0701 32.0435C24.4711 32.0544 24.8652 31.9371 25.1949 31.7085C25.6486 31.4196 26.1753 31.2662 26.7132 31.2662C27.2511 31.2662 27.7778 31.4196 28.2315 31.7085C28.5658 31.927 28.9565 32.0434 29.3559 32.0434C29.7553 32.0434 30.1461 31.927 30.4803 31.7085C30.9341 31.4194 31.461 31.2659 31.9991 31.2659C32.5371 31.2659 33.064 31.4194 33.5178 31.7085C33.8602 31.9388 34.2662 32.0559 34.6787 32.0431C34.7087 32.0435 34.7387 32.042 34.7685 32.0385L34.8719 32.8088C34.7938 32.8179 34.7153 32.8219 34.6367 32.8209Z" fill="white"/>
+      <path d="M39.9276 30.1007C39.3878 30.1117 38.8575 29.9573 38.408 29.6584C38.0733 29.4397 37.6823 29.3233 37.2826 29.3233C36.8829 29.3233 36.4918 29.4397 36.1572 29.6584C35.7035 29.9472 35.1769 30.1005 34.6391 30.1005C34.1013 30.1005 33.5746 29.9472 33.1209 29.6584C32.7868 29.4398 32.3962 29.3235 31.9969 29.3235C31.5977 29.3235 31.2071 29.4398 30.8729 29.6584C30.4192 29.9472 29.8926 30.1007 29.3548 30.1007C28.817 30.1007 28.2903 29.9472 27.8366 29.6584C27.5025 29.4398 27.1119 29.3235 26.7126 29.3235C26.3134 29.3235 25.9228 29.4398 25.5886 29.6584C25.1397 29.9575 24.6098 30.1119 24.0705 30.1007C23.5311 30.1119 23.0013 29.9575 22.5524 29.6584C22.2229 29.4298 21.8291 29.3124 21.4283 29.3233C21.0277 29.3125 20.634 29.4298 20.3047 29.6584C19.8565 29.9572 19.3275 30.1115 18.7889 30.1007C18.2494 30.1119 17.7195 29.9575 17.2704 29.6584C16.9403 29.4293 16.5456 29.3119 16.144 29.3233V28.546C16.6834 28.5349 17.2132 28.6892 17.6622 28.9883C17.9919 29.2169 18.3859 29.3343 18.787 29.3233C19.1876 29.3342 19.5813 29.2168 19.9106 28.9883C20.3588 28.6895 20.8878 28.5352 21.4264 28.546C21.9661 28.5345 22.4964 28.6889 22.9457 28.9883C23.2752 29.2169 23.6692 29.3343 24.0701 29.3233C24.471 29.3343 24.865 29.2169 25.1945 28.9883C25.6481 28.6994 26.1748 28.5459 26.7126 28.5459C27.2505 28.5459 27.7771 28.6994 28.2308 28.9883C28.565 29.2069 28.9556 29.3233 29.355 29.3233C29.7543 29.3233 30.145 29.2069 30.4792 28.9883C30.9328 28.6994 31.4595 28.5459 31.9973 28.5459C32.5351 28.5459 33.0618 28.6994 33.5154 28.9883C33.8496 29.2069 34.2403 29.3233 34.6396 29.3233C35.039 29.3233 35.4296 29.2069 35.7639 28.9883C36.218 28.6995 36.745 28.5461 37.2832 28.5461C37.8213 28.5461 38.3483 28.6995 38.8024 28.9883C39.1373 29.2068 39.5284 29.3231 39.9282 29.3231C40.328 29.3231 40.7192 29.2068 41.054 28.9883C41.5035 28.6894 42.0336 28.5351 42.5733 28.546V29.3233C42.1715 29.312 41.7765 29.4294 41.4461 29.6584C40.9969 29.9571 40.4671 30.1114 39.9276 30.1007Z" fill="white"/>
+      <path d="M34.3891 29.7699L33.6557 29.5126C33.8446 28.9699 33.9218 28.3946 33.8826 27.8213C33.8434 27.2481 33.6886 26.6886 33.4276 26.1767L30.7578 20.9488C30.7315 20.8971 30.717 20.8403 30.7154 20.7823C30.7139 20.7244 30.7254 20.6668 30.7489 20.6139C30.7725 20.5609 30.8077 20.5139 30.8518 20.4763C30.8959 20.4387 30.9478 20.4114 31.0038 20.3965L36.3243 18.9778C36.4977 18.9325 36.6461 18.8205 36.7374 18.6663C36.8286 18.512 36.8553 18.328 36.8115 18.1542C36.7677 17.9804 36.6571 17.831 36.5037 17.7383C36.3503 17.6457 36.1665 17.6173 35.9924 17.6595L29.553 19.1986C29.4153 19.2311 29.287 19.2949 29.1779 19.385C29.0689 19.4751 28.982 19.5891 28.9241 19.7181C28.8662 19.8472 28.8388 19.9878 28.844 20.1292C28.8492 20.2706 28.8868 20.4088 28.954 20.5333L30.8663 24.0857C30.9148 24.176 30.9256 24.2818 30.8965 24.38C30.8674 24.4783 30.8007 24.5611 30.7108 24.6104L28.2428 25.9707L27.8677 25.2898L29.9984 24.1152L28.2704 20.9017C28.1467 20.6723 28.0775 20.4176 28.0681 20.1572C28.0587 19.8967 28.1093 19.6376 28.216 19.3999C28.3227 19.1622 28.4826 18.9521 28.6835 18.7861C28.8843 18.62 29.1206 18.5024 29.3742 18.4423L35.8105 16.9035C36.1852 16.8089 36.5821 16.8669 36.914 17.0649C37.2459 17.2629 37.4856 17.5847 37.5803 17.9593C37.6749 18.334 37.6169 18.731 37.4189 19.0629C37.2209 19.3948 36.8991 19.6345 36.5244 19.7291L31.6685 21.0234L34.1202 25.8226C34.4289 26.4284 34.6119 27.0904 34.6581 27.7688C34.7043 28.4471 34.6128 29.1278 34.3891 29.7699Z" fill="white"/>
+      <path d="M26.5092 26.0456L21.786 28.6482L22.161 29.3287L26.8841 26.7261L26.5092 26.0456Z" fill="white"/>
+      <path d="M37.9093 27.1854C37.3328 27.1854 36.7692 27.0145 36.2898 26.6942C35.8105 26.3739 35.4368 25.9186 35.2162 25.386C34.9956 24.8533 34.9379 24.2672 35.0503 23.7018C35.1628 23.1363 35.4404 22.6169 35.8481 22.2092C36.2558 21.8016 36.7752 21.524 37.3406 21.4115C37.9061 21.299 38.4922 21.3567 39.0248 21.5774C39.5575 21.798 40.0127 22.1716 40.333 22.651C40.6533 23.1303 40.8243 23.6939 40.8243 24.2705C40.8235 25.0433 40.5161 25.7843 39.9696 26.3308C39.4231 26.8772 38.6822 27.1846 37.9093 27.1854ZM37.9093 22.1328C37.4865 22.1328 37.0732 22.2582 36.7217 22.4931C36.3702 22.7279 36.0962 23.0618 35.9344 23.4524C35.7726 23.843 35.7302 24.2728 35.8127 24.6875C35.8952 25.1022 36.0988 25.4831 36.3978 25.782C36.6967 26.081 37.0776 26.2846 37.4923 26.367C37.9069 26.4495 38.3368 26.4072 38.7274 26.2454C39.118 26.0836 39.4518 25.8096 39.6867 25.4581C39.9216 25.1065 40.047 24.6932 40.047 24.2705C40.0462 23.7037 39.8208 23.1604 39.4201 22.7597C39.0193 22.359 38.476 22.1335 37.9093 22.1328Z" fill="white"/>
+    </svg>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div style="width: 858.49px; height: 199.28px; left: 287.60px; top: 3521px; position: absolute">
+    <div style="width: 326.16px; height: 69.99px; left: 278.98px; top: 0px; position: absolute"><span style="color: #7F2736; font-size: 40px; font-family: Poppins; font-weight: 700; line-height: 72px; word-wrap: break-word">Why </span><span style="color: #2C2D32; font-size: 40px; font-family: Poppins; font-weight: 700; line-height: 72px; word-wrap: break-word">Choose Us</span></div>
+    <div style="width: 858.49px; height: 125.40px; left: 0px; top: 73.88px; position: absolute; text-align: center; color: #2C2D32; font-size: 24px; font-family: Poppins; font-weight: 400; line-height: 43.20px; word-wrap: break-word">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+    </div>
+    <div style="width: 430px; height: 405px; left: 7.60px; top: 3843px; position: absolute; background: white; box-shadow: 0px 10px 60px rgba(38.03, 44.84, 117.94, 0.08); border-radius: 20px"></div>
+    <div style="width: 430px; height: 405px; left: 494.60px; top: 3843px; position: absolute; background: white; box-shadow: 0px 10px 60px rgba(38.03, 44.84, 117.94, 0.08); border-radius: 20px"></div>
+    <div style="width: 430px; height: 405px; left: 981.60px; top: 3843px; position: absolute; background: white; box-shadow: 0px 10px 60px rgba(38.03, 44.84, 117.94, 0.08); border-radius: 20px"></div>
+    <div style="width: 327px; height: 43px; left: 59.60px; top: 3958px; position: absolute; text-align: center; color: black; font-size: 30px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Handpicked Hotels</div>
+    <div style="width: 329px; height: 42px; left: 544.60px; top: 3958px; position: absolute; text-align: center; color: black; font-size: 30px; font-family: Poppins; font-weight: 500; word-wrap: break-word">World Class Service</div>
+    <div style="width: 340px; height: 42px; left: 1045.60px; top: 3958px; position: absolute; text-align: center; color: black; font-size: 30px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Best Price Guarantee</div>
+    <div style="width: 325px; height: 136px; left: 60.60px; top: 4065px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Poppins; font-weight: 400; line-height: 36px; word-wrap: break-word">Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</div>
+    <div style="width: 361px; height: 102px; left: 529.60px; top: 4065px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Poppins; font-weight: 400; line-height: 36px; word-wrap: break-word">Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</div>
+    <div style="width: 305px; height: 136px; left: 1043.60px; top: 4065px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Poppins; font-weight: 400; line-height: 36px; word-wrap: break-word">Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</div>
+    <div style="width: 96px; height: 94px; left: 661.60px; top: 3790px; position: absolute; background: #F0BB1F; box-shadow: 0px 16px 40px rgba(37.26, 43.96, 112.62, 0.10); border-radius: 9999px"></div>
+    <div style="width: 96px; height: 94px; left: 1148.60px; top: 3790px; position: absolute; background: #F15A2B; box-shadow: 0px 10px 40px rgba(54.06, 60.89, 136, 0.06); border-radius: 9999px"></div>
+    <div style="width: 96px; height: 94px; left: 174.60px; top: 3790px; position: absolute; background: #4B40C5; box-shadow: 0px 10px 40px rgba(54.06, 60.89, 136, 0.06); border-radius: 9999px"></div>
+    <div style="width: 43px; height: 42px; left: 687.60px; top: 3816px; position: absolute">
+      <svg xmlns="http://www.w3.org/2000/svg" width="44" height="42" viewBox="0 0 44 42" fill="none">
+        <g clip-path="url(#clip0_0_276)">
+          <path d="M22.0973 42C19.1858 42 16.4003 41.4463 13.7408 40.3389C11.0813 39.2314 8.79277 37.7412 6.87512 35.8682C4.95748 33.9951 3.43176 31.7598 2.29797 29.1621C1.16418 26.5645 0.59729 23.8438 0.59729 21C0.59729 18.1562 1.16418 15.4355 2.29797 12.8379C3.43176 10.2402 4.95748 8.00488 6.87512 6.13184C8.79277 4.25879 11.0813 2.76855 13.7408 1.66113C16.4003 0.553711 19.1858 0 22.0973 0C25.0087 0 27.7942 0.553711 30.4537 1.66113C33.1132 2.76855 35.4018 4.25879 37.3195 6.13184C39.2371 8.00488 40.7628 10.2402 41.8966 12.8379C43.0304 15.4355 43.5973 18.1562 43.5973 21C43.5973 23.8438 43.0304 26.5645 41.8966 29.1621C40.7628 31.7598 39.2371 33.9951 37.3195 35.8682C35.4018 37.7412 33.1132 39.2314 30.4537 40.3389C27.7942 41.4463 25.0087 42 22.0973 42ZM12.901 12.0176L10.8854 10.2949C10.5774 10.2949 10.2135 10.3291 9.79358 10.3975C9.37366 10.4658 8.99573 10.5 8.65979 10.5C8.63179 10.4727 8.37984 9.9668 7.90393 8.98242C4.8245 12.4551 3.28479 16.4609 3.28479 21C3.28479 21.082 3.29179 21.1914 3.30579 21.3281C3.31978 21.4648 3.32678 21.5605 3.32678 21.6152C3.49475 21.7793 3.90767 22.0869 4.56555 22.5381C5.22343 22.9893 5.69234 23.3516 5.97229 23.625H8.65979C8.74377 23.5703 8.82076 23.5293 8.89075 23.502C8.96073 23.4746 9.03772 23.4473 9.1217 23.4199C8.84176 23.1191 8.42883 22.6748 7.88293 22.0869C7.33704 21.499 6.92411 21.0684 6.64417 20.7949C6.75614 20.166 6.91012 19.2158 7.10608 17.9443C7.30204 16.6729 7.44202 15.7227 7.526 15.0938C9.93355 14.1094 11.7252 13.3848 12.901 12.9199V12.0176ZM21.3414 5.33203C20.9495 5.16797 20.5856 5.01758 20.2496 4.88086C20.1656 4.66211 20.1097 4.49805 20.0817 4.38867C19.9137 4.9082 19.6477 5.6875 19.2838 6.72656C19.3958 6.75391 19.5568 6.78125 19.7667 6.80859C19.9767 6.83594 20.1377 6.86328 20.2496 6.89062H21.3414V5.33203ZM21.1735 24.6504C21.0335 24.7871 20.9355 24.8965 20.8795 24.9785C20.5436 25.5527 20.0677 26.4277 19.4518 27.6035C18.8359 28.7793 18.374 29.6543 18.066 30.2285C18.458 30.8027 19.0529 31.6777 19.8507 32.8535C20.6486 34.0293 21.2434 34.9043 21.6354 35.4785C25.2747 35.6973 28.0322 35.8613 29.9078 35.9707C29.9638 36.6543 30.1878 37.1191 30.5797 37.3652C33.1272 36.1074 35.2828 34.3643 37.0465 32.1357C38.8102 29.9072 39.972 27.4121 40.5319 24.6504C40 24.541 39.4191 24.3906 38.7892 24.1992C38.1593 24.0078 37.7044 23.8779 37.4244 23.8096C37.1445 23.7412 36.5916 23.6729 35.7657 23.6045C34.9399 23.5361 34.0791 23.584 33.1832 23.748C32.8473 23.7754 32.6303 23.5635 32.5323 23.1123C32.4344 22.6611 32.3854 22.1963 32.3854 21.7178C32.3854 21.2393 32.3294 20.9863 32.2174 20.959C31.6015 20.8496 30.3558 20.9521 28.4801 21.2666C26.6045 21.5811 25.3587 21.6836 24.7428 21.5742C24.3789 21.9023 23.1891 22.9277 21.1735 24.6504ZM23.651 4.10156C23.567 4.64844 23.42 5.46875 23.2101 6.5625C23.0001 7.65625 22.8392 8.49023 22.7272 9.06445C22.8671 9.03711 23.0981 9.00293 23.42 8.96191C23.742 8.9209 23.9729 8.90039 24.1129 8.90039C24.0289 8.8457 23.9309 8.79102 23.819 8.73633C24.2389 8.59961 24.5468 8.49023 24.7428 8.4082C24.2669 6.49414 23.903 5.05859 23.651 4.10156ZM28.5221 3.73242C28.4661 4.0332 28.4381 4.45703 28.4381 5.00391C28.4381 5.55078 28.2981 6.27539 28.0182 7.17773C28.0462 7.23242 28.1022 7.28711 28.1862 7.3418C28.7461 7.28711 29.6839 7.19141 30.9996 7.05469C30.9996 6.48047 31.2936 5.90625 31.8815 5.33203C30.8177 4.70312 29.6979 4.16992 28.5221 3.73242ZM33.7711 6.60352C33.7151 6.71289 33.6171 6.86328 33.4772 7.05469C34.0091 7.13672 34.359 7.20508 34.527 7.25977C34.191 6.95898 33.9391 6.74023 33.7711 6.60352ZM34.9049 7.58789C34.8209 7.75195 34.6879 7.99805 34.506 8.32617C34.324 8.6543 34.191 8.90039 34.1071 9.06445C33.2952 9.0918 32.2034 9.13281 30.8317 9.1875L30.6637 7.79297C30.6077 7.82031 30.5097 7.85449 30.3698 7.89551C30.2298 7.93652 30.1178 7.95703 30.0338 7.95703V9.9668C29.4459 10.0215 28.5431 10.1035 27.3253 10.2129C26.1075 10.3223 25.2047 10.4043 24.6168 10.459C24.4209 10.7324 24.2109 11.0332 23.9869 11.3613C24.7428 12.9473 25.3167 14.1367 25.7086 14.9297C25.1487 15.0664 24.0009 15.3672 22.2653 15.832V17.2266C22.2653 17.2812 22.2863 17.3633 22.3282 17.4727C22.3702 17.582 22.4052 17.6641 22.4332 17.7188C22.9091 17.9375 23.651 18.2656 24.6588 18.7031C25.6666 19.1406 26.4225 19.4824 26.9264 19.7285L27.8502 18.6211C27.8222 18.3477 27.7522 17.917 27.6403 17.3291C27.5283 16.7412 27.4443 16.2969 27.3883 15.9961C27.4723 15.9414 27.6053 15.8662 27.7872 15.7705C27.9692 15.6748 28.1022 15.5996 28.1862 15.5449C28.942 15.3262 29.5159 15.1758 29.9078 15.0938C30.2718 15.668 30.7827 16.4883 31.4406 17.5547C32.0984 18.6211 32.5114 19.291 32.6793 19.5645C32.9313 19.3457 33.2812 19.0107 33.7291 18.5596C34.177 18.1084 34.513 17.7734 34.7369 17.5547C33.2252 16.5156 32.2314 15.8457 31.7555 15.5449C31.7835 15.3262 31.8395 15.0117 31.9235 14.6016H33.4772C35.0449 15.9141 36.6546 17.2539 38.3063 18.6211C38.3343 18.6211 38.3623 18.6006 38.3903 18.5596C38.4183 18.5186 38.4462 18.498 38.4742 18.498C38.3623 18.2793 37.9983 17.6094 37.3824 16.4883C37.3824 16.4609 37.4244 16.4062 37.5084 16.3242L37.6764 16.1602H39.3981C39.4261 16.1328 39.664 16.0098 40.1119 15.791C39.1601 12.6191 37.4244 9.88477 34.9049 7.58789Z" fill="white"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_0_276">
+            <rect width="43" height="42" fill="white" transform="translate(0.59729)"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+    <div style="width: 43px; height: 38px; left: 1174.60px; top: 3817px; position: absolute">
+      <svg xmlns="http://www.w3.org/2000/svg" width="44" height="38" viewBox="0 0 44 38" fill="none">
+        <path d="M0.59729 38H8.41547V15.2H0.59729V38ZM43.5973 17.1C43.5973 15.01 41.8382 13.3 39.6882 13.3H27.355L29.2118 4.617L29.2705 4.009C29.2705 3.23 28.9382 2.508 28.4105 1.995L26.3387 0L13.4777 12.521C12.7546 13.205 12.3246 14.155 12.3246 15.2V34.2C12.3246 36.29 14.0837 38 16.2337 38H33.8246C35.4468 38 36.8346 37.05 37.4209 35.682L43.3237 22.287C43.4996 21.85 43.5973 21.394 43.5973 20.9V17.1Z" fill="white"/>
+      </svg></div>
+    <div style="width: 41px; height: 39px; left: 202.60px; top: 3816px; position: absolute">
+      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="39" viewBox="0 0 42 39" fill="none">
+        <path d="M40.2721 13.733L27.9811 11.9537L22.4867 0.85833C22.3367 0.554545 22.0898 0.308624 21.7848 0.159143C21.0199 -0.216971 20.0905 0.0964574 19.7081 0.85833L14.2137 11.9537L1.92265 13.733C1.58379 13.7812 1.27397 13.9404 1.03677 14.1815C0.750001 14.475 0.59198 14.87 0.597426 15.2796C0.602873 15.6892 0.77134 16.0799 1.06581 16.3658L9.95852 25.002L7.85757 37.1968C7.8083 37.4804 7.83982 37.7722 7.94854 38.0389C8.05726 38.3057 8.23885 38.5367 8.4727 38.7059C8.70654 38.8751 8.9833 38.9756 9.27159 38.9961C9.55988 39.0166 9.84816 38.9562 10.1037 38.8218L21.0974 33.0643L32.091 38.8218C32.3912 38.9809 32.7397 39.0339 33.0737 38.9761C33.916 38.8314 34.4824 38.0358 34.3372 37.1968L32.2363 25.002L41.129 16.3658C41.371 16.1295 41.5308 15.8209 41.5792 15.4834C41.7099 14.6395 41.1193 13.8584 40.2721 13.733Z" fill="white"/>
+      </svg></div>
+    <div style="width: 1400.24px; height: 338.24px; left: 5px; top: 5112.07px; position: absolute">
+    <div style="width: 284.65px; height: 195.53px; left: 1115.60px; top: 11.93px; position: absolute">
+    <div style="width: 235.43px; height: 59.86px; left: 2.66px; top: 0px; position: absolute">
+    <div style="width: 54.53px; height: 54.53px; left: 180.90px; top: 2.66px; position: absolute">
+    <div style="width: 54.53px; height: 54.53px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 0px 2.660242795944214px 13.301215171813965px rgba(0, 0, 0, 0.10)"></div>
+    <div style="width: 21.33px; height: 17.29px; left: 19.76px; top: 18.62px; position: absolute; background: #080809"></div>
+    </div>
+    <div style="width: 54.53px; height: 54.53px; left: 0px; top: 0px; position: absolute">
+    <div style="width: 54.53px; height: 54.53px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 0px 2.660242795944214px 13.301215171813965px rgba(0, 0, 0, 0.10)"></div>
+    <div style="width: 7.79px; height: 16.88px; left: 23.37px; top: 21.28px; position: absolute; background: #080809"></div>
+    </div>
+    <div style="width: 59.86px; height: 59.86px; left: 87.79px; top: 0px; position: absolute">
+    <div style="width: 21.28px; height: 21.28px; left: 19.95px; top: 18.62px; position: absolute">
+    <div style="width: 21.28px; height: 21.28px; left: 0px; top: -0px; position: absolute">
+    <div style="width: 21.28px; height: 21.28px; left: 0px; top: 0px; position: absolute; background: white"></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div style="width: 284.65px; height: 101.09px; left: 0px; top: 94.44px; position: absolute">
+    <div style="left: 2.66px; top: 0px; position: absolute; color: #5E6282; font-size: 26.60px; font-family: Poppins; font-weight: 500; line-height: 33.12px; letter-spacing: 0.13px; word-wrap: break-word">Discover our app</div>
+    <div style="width: 142.32px; height: 46.55px; left: 0px; top: 54.54px; position: absolute">
+    <div style="width: 142.32px; height: 46.55px; left: 0px; top: 0px; position: absolute; background: #080809; border-radius: 23.28px"></div>
+    <div style="width: 26.60px; height: 26.60px; left: 22.61px; top: 9.31px; position: absolute">
+    <div style="width: 14.35px; height: 25.73px; left: 0.96px; top: 0.44px; position: absolute; background: #2196F3"></div>
+    <div style="width: 18.03px; height: 13.30px; left: 1.95px; top: 0px; position: absolute; background: #4CAF50"></div>
+    <div style="width: 10.34px; height: 8.99px; left: 15.31px; top: 8.81px; position: absolute; background: #F0BB1F"></div>
+    <div style="width: 18.03px; height: 13.30px; left: 1.95px; top: 13.30px; position: absolute; background: #F15A2B"></div>
+    </div>
+    <div style="width: 71.35px; height: 19.69px; left: 56.18px; top: 12.35px; position: absolute; background: white"></div>
+    </div>
+    <div style="width: 133.01px; height: 46.55px; left: 151.63px; top: 54.54px; position: absolute">
+    <div style="width: 133.01px; height: 46.55px; left: 0px; top: 0px; position: absolute; background: #080809; border-radius: 23.28px"></div>
+    <div style="width: 17.46px; height: 21.28px; left: 23.20px; top: 10.64px; position: absolute">
+    <div style="width: 17.46px; height: 16.38px; left: 0px; top: 4.90px; position: absolute; background: white"></div>
+    <div style="width: 4px; height: 4.68px; left: 8.69px; top: 0px; position: absolute; background: white"></div>
+    </div>
+    <div style="width: 72.48px; height: 23.12px; left: 47.88px; top: 11.47px; position: absolute; background: white"></div>
+    </div>
+    </div>
+    </div>
+    <div style="left: 0px; top: 85.13px; position: absolute; color: #5E6282; font-size: 18px; font-family: Poppins; font-weight: 500; line-height: 22.41px; word-wrap: break-word">Book your trip in minute, get full<br/>Control for much longer.<br/></div>
+    <div style="width: 629.84px; height: 204.25px; left: 385.74px; top: 0px; position: absolute">
+    <div style="width: 164px; height: 201.59px; left: 0px; top: 0px; position: absolute">
+    <div style="left: 0px; top: 0px; position: absolute; color: #080809; font-size: 32px; font-family: Poppins; font-weight: 700; line-height: 39.84px; word-wrap: break-word">Company</div>
+    <div style="left: 0px; top: 79.81px; position: absolute; color: #5E6282; font-size: 24px; font-family: Poppins; font-weight: 500; line-height: 29.88px; word-wrap: break-word">About</div>
+    <div style="left: 0px; top: 125.03px; position: absolute; color: #5E6282; font-size: 24px; font-family: Poppins; font-weight: 500; line-height: 29.88px; word-wrap: break-word">Careers</div>
+    <div style="left: 0px; top: 171.59px; position: absolute; color: #5E6282; font-size: 24px; font-family: Poppins; font-weight: 500; line-height: 29.88px; word-wrap: break-word">Mobile</div>
+    </div>
+    <div style="width: 135.33px; height: 201.59px; left: 239.42px; top: 0px; position: absolute">
+    <div style="left: 1.33px; top: 0px; position: absolute; color: #080809; font-size: 32px; font-family: Poppins; font-weight: 700; line-height: 39.84px; word-wrap: break-word">Contact</div>
+    <div style="left: 0px; top: 77.15px; position: absolute; color: #5E6282; font-size: 24px; font-family: Poppins; font-weight: 500; line-height: 29.88px; word-wrap: break-word">Help/FAQ</div>
+    <div style="left: 0px; top: 125.03px; position: absolute; color: #5E6282; font-size: 24px; font-family: Poppins; font-weight: 500; line-height: 29.88px; word-wrap: break-word">Press</div>
+    <div style="left: 0px; top: 171.59px; position: absolute; color: #5E6282; font-size: 24px; font-family: Poppins; font-weight: 500; line-height: 29.88px; word-wrap: break-word">Affilates</div>
+    </div>
+    <div style="width: 151px; height: 204.25px; left: 478.84px; top: 0px; position: absolute">
+    <div style="left: 0px; top: 0px; position: absolute; color: #080809; font-size: 32px; font-family: Poppins; font-weight: 700; line-height: 39.84px; word-wrap: break-word">More</div>
+    <div style="left: 0px; top: 79.81px; position: absolute; color: #5E6282; font-size: 24px; font-family: Poppins; font-weight: 500; line-height: 29.88px; word-wrap: break-word">Airlinefees</div>
+    <div style="left: 0px; top: 127.69px; position: absolute; color: #5E6282; font-size: 24px; font-family: Poppins; font-weight: 500; line-height: 29.88px; word-wrap: break-word">Airline</div>
+    <div style="left: 0px; top: 174.25px; position: absolute; color: #5E6282; font-size: 24px; font-family: Poppins; font-weight: 500; line-height: 29.88px; word-wrap: break-word">Low fare tips</div>
+    </div>
+    </div>
+    <div style="left: 571.95px; top: 315.24px; position: absolute; color: #5E6282; font-size: 18.62px; font-family: Poppins; font-weight: 500; line-height: 23.18px; word-wrap: break-word">All rights reserved@bonvoyage.co</div>
+    </div>
+    <div style="width: 1373.58px; height: 484.79px; left: 22.60px; top: 4432px; position: absolute">
+    <div style="width: 1350.49px; height: 484.79px; left: 1350.49px; top: 500px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; opacity: 0.20; background: #DFD7F9; border-top-left-radius: 26.60px; border-top-right-radius: 171.59px; border-bottom-right-radius: 26.60px; border-bottom-left-radius: 26.60px"></div>
+    <div style="width: 485.95px; height: 78.49px; left: 290.88px; top: 316.27px; position: absolute">
+    <div style="width: 485.95px; height: 78.49px; left: 0px; top: 0px; position: absolute; background: white; border-radius: 13.30px"></div>
+    <div style="width: 134px; height: 20px; left: 75.70px; top: 28.73px; position: absolute; color: #39425D; font-size: 18.62px; font-family: Monts">Your email</div>
+    <div style="width: 24px; height: 24px; left: 35.78px; top: 28.86px; position: absolute">
+    <div style="width: 13.71px; height: 6px; left: 4.57px; top: 8px; position: absolute; border-radius: 1.33px; border: 1.33px #39425D solid"></div>
+    <div style="width: 24px; height: 24px; left: 0px; top: 0px; position: absolute">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25 25" fill="none">
+        <path d="M4.82697 8.12598L10.8082 13.3596C11.3097 13.7984 12.0585 13.7984 12.56 13.3596L18.5413 8.12598" stroke="#39425D" stroke-width="1.33012" stroke-linecap="round"/>
+        <rect x="0.920615" y="0.791526" width="22.6699" height="22.6699" rx="5.98555" stroke="#39425D" stroke-width="1.33012"/>
+      </svg></div>
+    </div>
+    </div>
+    <div style="width: 207.77px; height: 78.49px; left: 804.52px; top: 316.27px; position: absolute">
+    <div style="width: 207.77px; height: 78.49px; left: 0px; top: 0px; position: absolute; background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%); border-radius: 13.30px"></div>
+    <div style="width: 150px; height: 26px; left: 29.05px; top: 25.73px; position: absolute; text-align: center; color: white; font-size: 24px; font-family: Poppins; font-weight: 400; word-wrap: break-word">Subscribe</div>
+    </div>
+    <div style="width: 991px; height: 161px; left: 194.58px; top: 107px; position: absolute; text-align: center; color: #5E6282; font-size: 32px; font-family: Poppins; font-weight: 600; line-height: 71.83px; word-wrap: break-word">Subscribe to get information, latest news and other<br/>interesting offers at Bon Voyage</div>
+    <div style="width: 80.80px; height: 80.80px; left: 1292.78px; top: 0px; position: absolute">
+      <svg xmlns="http://www.w3.org/2000/svg" width="82" height="81" viewBox="0 0 82 81" fill="none">
+        <circle cx="40.7763" cy="40.3994" r="40.3994" fill="url(#paint0_linear_0_348)"/>
+        <path d="M61.1034 27.692C61.9014 29.0741 61.7944 30.7199 60.8232 31.9866L39.4995 59.8127C38.62 60.9601 37.1721 61.5451 35.6914 61.2609C34.2415 60.9821 33.0918 59.9251 32.6929 58.5036L29.5377 47.2742L29.2091 46.1062L28.3618 45.2376L20.2145 36.8905C19.1829 35.8342 18.8424 34.3101 19.3259 32.915C19.8044 31.5359 21.0045 30.5352 22.4841 30.3412L57.2441 25.7874C58.8267 25.5796 60.3055 26.3099 61.1034 27.692Z" fill="white"/>
+        <path d="M29.5378 47.2734L32.6929 58.5028C33.0919 59.9244 34.2415 60.9812 35.6915 61.2601C37.1722 61.5444 38.6201 60.9594 39.4995 59.8119L60.8232 31.9858C61.7945 30.7191 61.9014 29.0733 61.1035 27.6912L29.2092 46.1053L29.5378 47.2734Z" fill="white"/>
+        <path d="M42.1882 38.6115C42.5127 39.1736 42.3206 39.8928 41.7578 40.2178L29.5379 47.2729L29.2093 46.1049L28.3621 45.2363L40.582 38.1812C41.1447 37.8563 41.8637 38.0495 42.1882 38.6115Z" fill="url(#paint1_linear_0_348)"/>
+        <path d="M29.5377 47.2737L41.7576 40.2185C42.3204 39.8936 42.5126 39.1744 42.188 38.6123L29.2091 46.1057L29.5377 47.2737Z" fill="url(#paint2_linear_0_348)"/>
+        <defs>
+          <linearGradient id="paint0_linear_0_348" x1="57.6826" y1="2.2669" x2="22.959" y2="89.7608" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#747DEF"/>
+            <stop offset="1" stop-color="#5E3BE1"/>
+          </linearGradient>
+          <linearGradient id="paint1_linear_0_348" x1="37.7841" y1="39.8727" x2="39.0972" y2="42.5056" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#747DEF"/>
+            <stop offset="1" stop-color="#5E3BE1"/>
+          </linearGradient>
+          <linearGradient id="paint2_linear_0_348" x1="38.3554" y1="40.8632" x2="39.0527" y2="42.1608" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#747DEF"/>
+            <stop offset="1" stop-color="#5E3BE1"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    <div style="width: 15.29px; height: 2.35px; left: 10.67px; top: 12.47px; position: absolute; transform: rotate(-30deg); transform-origin: 0 0; background: linear-gradient(186deg, #747DEF 0%, #5E3BE1 100%)"></div>
+    <div style="width: 15.29px; height: 1.18px; left: 11.26px; top: 13.49px; position: absolute; transform: rotate(-30deg); transform-origin: 0 0; background: linear-gradient(186deg, #747DEF 0%, #5E3BE1 100%)"></div>
+    </div>
+    </div>
+    </div>
+</body>  
 </html>
